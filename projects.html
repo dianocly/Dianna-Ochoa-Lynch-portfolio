@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects – Dianna Lynch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-initials">DL</div>
+            <div class="brand-text">
+                <span>Dianna E. Ochoa Lynch</span>
+                <span>Mechanical Engineering · Robotics</span>
+            </div>
+        </div>
+
+        <div>
+            <div class="nav-section-label">Pages</div>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">
+                    <span class="icon">🏠</span><span>Home</span></a></li>
+                <li><a class="nav-link active" href="projects.html">
+                    <span class="icon">🛠️</span><span>Projects</span></a>
+                    <div class="nav-sub">
+                        <a href="#finger">Soft-Hand Robotic Finger</a>
+                        <a href="#exoskeleton">Firefighting Exoskeleton</a>
+                        <a href="#aegaeon">Aegaeon – FRC 2023</a>
+                        <a href="#glacier">Glacier – FTC PowerPlay</a>
+                        <a href="#early-work">Early Work</a>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="resume.html">
+                    <span class="icon">📄</span><span>Resume</span></a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-footer">
+            Scroll to see detailed write-ups; each section mirrors the structure of the original portfolio slides.
+        </div>
+    </aside>
+
+    <main class="main">
+        <header>
+            <div class="page-kicker">Projects</div>
+            <h1 class="page-title">Engineering work</h1>
+            <p class="page-subtitle">
+                Detailed project write-ups for my work and research, including a teleoperated robotic hand, conceptual design of exoskeleton augmentation, and competition robotics
+                including Aegaeon (FRC) and Glacier (FTC).
+            </p>
+        </header>
+
+        <!-- 1. SOFT-HAND FINGER -->
+        <section id="finger" class="project-section">
+            <div class="project-header">
+                <h2>Soft-Hand Inspired Robotic Finger</h2>
+                <span class="meta">Underactuated tendon-driven finger · 4 major prototype generations</span>
+            </div>
+            <div class="project-body">
+                <div>
+                    <h3>Project details, requirements, &amp; responsibilities</h3>
+                    <ul>
+                        <li>Design, manufacture, and control a robust, highly anthropomorphic robotic hand for the purpose of teleoperation.</li>
+                        <li>Embed multi-tendon actuation to precisely mimic all functions of a human hand and enable fine precision control in a wide range of settings.</li>
+                        <li>Create a robust, long-lasting, open-source solution that can be adapted to many forms of robotics.</li>
+                        <li>Make the finger fully serviceable: joints and tendons must be easy to assemble, replace, and tune.</li>
+                        <li>Oversee fabrication of the hand components and prototypes, including manual and CNC milling and turning, 3D printing, laser cutting, and waterjet parts.</li>
+                    </ul>
+
+                    <h3>Process &amp; iterations</h3>
+                    <p><strong>Parametric geometry (concept &amp; layout)</strong></p>
+                    <ul>
+                        <li>Developed a parametric 2D sketch for joint spacing and phalanx lengths to control the closing trajectory and stiffness profile.</li>
+                        <li>Embedded torque calculations into 2D parametric geometry to visualize and optimize tendon placement.</li>
+                        <li>Used this sketch to generate 3D link shapes and joint bosses, allowing rapid iteration on link length ratios and tendon anchor locations.</li>
+                    </ul>
+
+                    <p><strong>Prototype 1 – basic kinematics</strong></p>
+                    <ul>
+                        <li>Designed and manufactured an oversized model of a simple 3-link finger with printed pulleys and an n+1 tendon system between links.</li>
+                        <li>Verified the kinematic behavior: joint coupling, overall range of motion, and basic grasp shapes around objects.</li>
+                        <li>Identified redesign locations, including:
+                            <ul>
+                                <li>Protruding pulleys that interrupted the finger profile, impeding operation and anthropomorphic accuracy.</li>
+                                <li>Inaccuracies in the parametric calculations that led to high torque requirements.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p><strong>Prototype 2 – thumb joint prototype and routing</strong></p>
+                    <ul>
+                        <li>Designed and developed a prototype for an extra degree-of-freedom thumb design to capture additional abduction/adduction motion.</li>
+                        <li>Incorporated adjustable motor mounting to combat cable creep and ease assembly.</li>
+                        <li>Improved tendon retention points to avoid slippage under load.</li>
+                    </ul>
+
+                    <p><strong>Prototype 3 – capstan-actuated linkages</strong></p>
+                    <ul>
+                        <li>Redesigned the actuation mechanism to operate using capstan friction around joint pulleys.</li>
+                        <li>Rerouted cables through and around central points of actuation, preventing variability in tension during operation and simplifying the control scheme.</li>
+                        <li>Redesigned mounting and motor placement to slim the design package and allow for future multi-finger integration.</li>
+                    </ul>
+
+                    <p><strong>Prototype 4 – serviceable Mk1 finger design</strong></p>
+                    <ul>
+                        <li>Finalized a Mk1 serviceable finger with complete actuation and an accurately sized package.</li>
+                        <li>Personally CNC-machined phalanges and joints for assembly.</li>
+                        <li>Created a model tendon system that can be adapted to other finger and thumb designs.</li>
+                        <li>Prepared exploded views and basic drawings so the finger can be integrated into a larger hand as a standard module.</li>
+                    </ul>
+
+                    <h3>Future project scope</h3>
+                    <ul>
+                        <li>This project is ongoing, and I plan to continue to pursue it alongside my education. As this project continues, we hope to expand the finger design into a larger full-scale hand, incorporating a novel multi-stage capstan gearbox to create high-precision, low-backlash control. We then plan to build a full teleoperation control scheme, ideally integrating haptic feedback and response for high-precision applications, including surgery.</li>
+                    </ul>
+                </div>
+
+                <div class="project-gallery">
+                    <img src="images/Finger_Parametric_Sketch.png"
+                         alt="Parametric sketch of tendon-driven robotic finger">
+                    <img src="images/Finger_Prototype_1a.png"
+                         alt="Early tendon-driven finger prototype, side view">
+                    <img src="images/Finger_Prototype_1b.png"
+                         alt="Joint assembly detail of the robotic finger">
+                    <img src="images/Finger_Prototype_2b.png"
+                         alt="Second-generation robotic finger prototype assembled">
+                    <img src="images/Finger_Thumb_Prototype.jpg"
+                         alt="Thumb joint prototype and tendon routing concept">
+                    <img src="images/Finger_Prototype_3a.jpg"
+                         alt="Third-generation robotic finger prototype">
+                    <img src="images/Finger_Prototype_4a.jpg"
+                         alt="Fourth-generation, serviceable Mk1 finger prototype">
+                    <img src="images/Finger_Rigging.jpg"
+                         alt="Rigging tendons on a finger prototype">
+                    <img src="images/IMG_1008.jpg"
+                         alt="Finger prototype during assembly">
+                    <img src="images/Finger_Assembly_Good.jpg"
+                         alt="Robotic finger assembly with bearings and spacers">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. EXOSKELETON (NOW BELOW HAND) -->
+        <section id="exoskeleton" class="project-section">
+            <div class="project-header">
+                <h2>Firefighting Exoskeleton Arm (Conceptual Design)</h2>
+                <span class="meta">MITES Applied Mathematics Final Project · dielectric-elastomer powered augmentation suit</span>
+            </div>
+            <div class="project-body">
+                <div>
+                    <h3>Project details &amp; requirements</h3>
+                    <ul>
+                        <li>
+                            Conceptually design an upper-limb exoskeleton augmentation suit for firefighters that
+                            reduces fatigue and increases strength during demanding tasks in structural fire environments.
+                        </li>
+                        <li>
+                            Project scope was <strong>analytical and conceptual only</strong>:
+                            the system was modeled in Inventor and MATLAB and was not physically fabricated or tested.
+                        </li>
+                        <li>Heat resistance: operate up to ~90&nbsp;°C with safety margin.</li>
+                        <li>Flexibility and dexterity: preserve a wide range of motion so standard firefighting techniques remain possible.</li>
+                        <li>Weight and ergonomics: minimize added burden on the firefighter’s shoulders, back, and arms.</li>
+                        <li>Water and chemical resistance: withstand exposure to water, foam, and chemicals common in firefighting environments.</li>
+                        <li>
+                            Compatibility with existing PPE: integrate under turnout gear and SCBA without interfering with
+                            donning, doffing, or access to existing tools.
+                        </li>
+                        <li>Cost-effectiveness: pursue a concept that could be manufactured without exotic, cost-prohibitive components.</li>
+                    </ul>
+
+                    <h3>Process &amp; iterations</h3>
+
+                    <p><strong>Project context &amp; scope</strong></p>
+                    <ul>
+                        <li>
+                            Completed as the final project for the MITES Semester Applied Mathematics course, focusing on
+                            modeling a human-assist system with realistic constraints using mathematical tools rather than
+                            building hardware.
+                        </li>
+                        <li>
+                            Framed the work around: (1) defining engineering design criteria, (2) proposing a dielectric
+                            elastomer “muscle” architecture, and (3) evaluating behavior through MATLAB models informed by Inventor geometry.
+                        </li>
+                    </ul>
+
+                    <p><strong>Design criteria via firefighter interview</strong></p>
+                    <ul>
+                        <li>
+                            Consulted with a member of the North Carolina White Cross Fire Department to establish concrete
+                            criteria for safety, ergonomics, and integration into real fireground operations.
+                        </li>
+                        <li>
+                            Translated qualitative needs (comfort, mobility, survivability under heat, compatibility with
+                            gear) into quantitative design constraints on temperature, range of motion, added mass, and
+                            allowed bulk under PPE.
+                        </li>
+                    </ul>
+
+                    <p><strong>Artificial muscle concept using dielectric elastomers</strong></p>
+                    <ul>
+                        <li>
+                            Selected VHB 4910 as the dielectric elastomer, sandwiched between carbon-grease electrodes to
+                            form artificial “muscle fibers” that expand and contract under applied voltage and can tolerate
+                            elevated temperatures.
+                        </li>
+                        <li>
+                            Conceptualized multi-layer “muscle bundles” encapsulated in fire-resistant textiles and
+                            positioned along major upper-arm and forearm muscle groups so actuation directions align with
+                            natural joint motion.
+                        </li>
+                        <li>
+                            Mapped actuator locations and orientations to human anatomy to support lifting, bracing,
+                            and tool-handling motions without fighting the firefighter’s natural movement.
+                        </li>
+                    </ul>
+
+                    <p><strong>Inventor modeling and parameter extraction</strong></p>
+                    <ul>
+                        <li>
+                            Taught myself Inventor freeform modeling to sculpt a simplified human body segment, exoskeleton
+                            suit envelope, and embedded artificial muscle modules.
+                        </li>
+                        <li>
+                            Used Inventor’s 2D and 3D measurement tools to extract geometric parameters (segment lengths,
+                            cross-sectional areas, lever arms, and angles) needed as inputs to our MATLAB models.
+                        </li>
+                        <li>
+                            Coupled these geometric parameters to idealized dielectric elastomer actuator equations to
+                            estimate displacement, force, and torque at key joints under different voltage and loading
+                            conditions.
+                        </li>
+                    </ul>
+
+                                    </div>
+
+                <div class="project-gallery">
+                    <img src="images/Exoskeleton_Concept_Sketch.png"
+                         alt="Concept sketch of the firefighting exoskeleton">
+                    <img src="images/Exoskeleton_Elastomer_Research_Image.png"
+                         alt="Dielectric elastomer research illustration">
+                    <img src="images/Exoskeleton_final_a.jpg"
+                         alt="Firefighting exoskeleton CAD rendering">
+                    <img src="images/Exoskeleton_final_b.jpg"
+                         alt="Alternate view of exoskeleton CAD model">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. AEGAEON – FRC 2023 -->
+        <section id="aegaeon" class="project-section">
+            <div class="project-header">
+                <h2>Aegaeon – “The Hundred-Handed Hecatonchires” (FRC 2023)</h2>
+                <span class="meta">FIRST Robotics Competition · Charged Up · 24"×26" swerve + 2-joint arm</span>
+            </div>
+            <div class="project-body">
+                <div>
+                    <h3>Project details &amp; requirements</h3>
+                    <ul>
+                        <li>Game: FRC 2023 <em>Charged Up</em> – score cones and cubes on a grid and balance on a charging station.</li>
+                        <li>Chassis: 24"×26" swerve drive (first swerve season for the team) with full omnidirectional capability.</li>
+                        <li>Manipulator: arm capable of reaching all scoring nodes, handling both cones and cubes, and retracting safely inside the frame.</li>
+                        <li>Constraint: deliver a functional V1 robot early in the season and reserve time for iteration and optimization.</li>
+                    </ul>
+
+                    <h3>Process &amp; iterations (by slide focus)</h3>
+
+                    <p><strong>Concept – evaluating arm architectures</strong></p>
+                    <ul>
+                        <li>Sketched and evaluated three primary concepts:
+                            <ol>
+                                <li>Linear extending crane.</li>
+                                <li>Telescoping arm.</li>
+                                <li>Two-joint arm with shoulder and elbow.</li>
+                            </ol>
+                        </li>
+                        <li>Selected a 2-joint arm with an intake hopper to:
+                            <ul>
+                                <li>Keep the center of mass low and inside the frame on the charge station.</li>
+                                <li>Simplify the initial build by avoiding complex telescoping structures.</li>
+                                <li>Enable fast iteration on claw and hopper geometries over the season.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p><strong>Pneumatic geometry – four-position shoulder system</strong></p>
+                    <ul>
+                        <li>Chose a 4-position pneumatic shoulder, stacking pistons to generate discrete arm angles.</li>
+                        <li>Used Inventor 2023 parametric tools to:
+                            <ul>
+                                <li>Define adjustable base positions for the shoulder and forearm joints.</li>
+                                <li>Parameterize Bimba piston stroke, bore, and mounting points using real-world spec sheets.</li>
+                            </ul>
+                        </li>
+                        <li>Built a static torque calculator (driven by these parameters) to evaluate mechanical advantage and required force in each configuration.</li>
+                        <li>Result: an easily adjustable model that allowed systematic tuning of arm lengths and piston placements instead of guesswork.</li>
+                    </ul>
+
+                    <p><strong>Version 1 – arm &amp; manipulator</strong></p>
+                    <ul>
+                        <li>Designed a 1"×1" aluminum forearm driven by dual 5&nbsp;mm HTD belts.</li>
+                        <li>Created a pneumatic claw with custom molded silicone pads to grip both cones and cubes reliably.</li>
+                        <li>Designed a pneumatic intake flap that:
+                            <ul>
+                                <li>Linked the hopper to the intake ramp for game piece collection.</li>
+                                <li>Retracted into the frame to meet size constraints and protect the mechanism.</li>
+                            </ul>
+                        </li>
+                        <li>Field testing revealed issues:
+                            <ul>
+                                <li>~5° of backlash at the forearm due to belt stretch and compliance in the drivetrain.</li>
+                                <li>Inconsistent hopper chute behavior and slow return, costing cycle time.</li>
+                                <li>Potential internal collisions between the hopper and arm during fast transitions.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p><strong>Redesign – direct-driven forearm &amp; simplified intake</strong></p>
+                    <ul>
+                        <li>To reduce backlash:
+                            <ul>
+                                <li>Redesigned the motor mount to drive the forearm directly rather than through a long belt run.</li>
+                                <li>Replaced the forearm belt with chain to eliminate belt stretch.</li>
+                                <li>Swapped the forearm shaft to a REV MaxSpline deadshaft to increase stiffness and reduce torsional wind-up.</li>
+                            </ul>
+                        </li>
+                        <li>To address the unreliable hopper:
+                            <ul>
+                                <li>Removed the hopper entirely and replaced the manipulator with an open-source intake design from FRC 111 (Wildstang), allowing direct ground intake.</li>
+                                <li>Simplified the arm’s path through the robot, reducing collision risk and cleaning up the state machine logic.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p><strong>Season performance &amp; learning</strong></p>
+                    <ul>
+                        <li><strong>Indiana State Championship:</strong> ranked 11th after qualifications, first pick of Alliance #7, finished 3rd overall – the team’s best state performance to that point.</li>
+                        <li><strong>FROST Offseason:</strong> ranked 7th after qualifications, captain of Alliance #5, and finished as finalist alliance – first time captaining a finalist alliance in team history.</li>
+                    </ul>
+
+                                    </div>
+
+                <div class="project-gallery">
+                    <img src="images/Aegaeon_Cover_image.png"
+                         alt="Aegaeon FRC 2023 robot cover image">
+                    <img src="images/FRC_2023_game_a.jpg"
+                         alt="FRC Charged Up game field">
+                    <img src="images/Aegaeon_Sketch_Geometry_a_Final.png"
+                         alt="Parametric geometry sketch for Aegaeon arm">
+                    <img src="images/Aegaeon_Parametric_Calculator.png"
+                         alt="Static torque calculator screenshot for pneumatic geometry">
+                    <img src="images/Aegaeon_Pre_Redesign_image_a.jpg"
+                         alt="Aegaeon early version with intake hopper">
+                    <img src="images/Aegeaon_Redesign_CAD_Render.jpg"
+                         alt="Redesigned Aegaeon CAD render with direct-driven forearm">
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. GLACIER – FTC POWERPLAY -->
+        <section id="glacier" class="project-section">
+            <div class="project-header">
+                <h2>Glacier – FTC PowerPlay Robot (Team 11329)</h2>
+                <span class="meta">FIRST Tech Challenge · 13"×13" mecanum base · coaxial virtual four-bar</span>
+            </div>
+            <div class="project-body">
+                <div>
+                    <h3>Project details &amp; requirements</h3>
+                    <ul>
+                        <li>Game: FTC 2022–23 <em>PowerPlay</em> – pick and place cones onto junctions at multiple heights to create circuits.</li>
+                        <li>Chassis: compact 13"×13" mecanum base, able to slip between dense field junctions and move in any direction.</li>
+                        <li>Manipulator: coaxial virtual four-bar with wrist control mounted on linear slides, capable of reaching every junction.</li>
+                        <li>Constraints: stay within FTC size limits, maintain a low center of gravity, and ensure mechanisms can be serviced between matches.</li>
+                    </ul>
+
+                    <h3>Process &amp; iterations (by slide focus)</h3>
+
+                    <p><strong>Concept – mecanum base and coaxial virtual four-bar</strong></p>
+                    <ul>
+                        <li>Based the drivetrain on a modified goBILDA Strafer chassis, optimized for compact packaging and predictable holonomic control.</li>
+                        <li>Designed a coaxial virtual 4-bar mounted on ViperSlides to reach low, medium, and high junctions without overextending beyond the robot’s footprint.</li>
+                    </ul>
+
+                    <p><strong>Version 1 – servo and gear-based coaxial drive</strong></p>
+                    <ul>
+                        <li>Used goBILDA Speed servos driving through a central shaft for the virtual four-bar and wrist rotation.</li>
+                        <li>Powered the arm with goBILDA Torque servos on a 3:1 reduction for sufficient holding torque at high reach.</li>
+                        <li>Relied on goBILDA ViperSlides for linear extension to reach distant junctions.</li>
+                        <li>Outcome: functional but tall; servo placement and metal geartrains produced a high center of gravity and made the robot tippy.</li>
+                    </ul>
+
+                    <p><strong>Carriage redesign – lowering CG and re-packaging</strong></p>
+                    <ul>
+                        <li>Added wooden side plates which:
+                            <ul>
+                                <li>Provided new mounting faces to lower wrist servos on both sides.</li>
+                                <li>Allowed arm servos to be moved lower and closer to the robot’s center.</li>
+                                <li>Made it possible to remove heavy metal gears and replace them with custom 3D-printed pulleys.</li>
+                            </ul>
+                        </li>
+                        <li>Introduced a carbon-fiber coaxial shaft to:
+                            <ul>
+                                <li>Reduce the weight of the 18" arm assembly.</li>
+                                <li>Transfer torque from the central pulley to printed arm adapters while keeping mass off the outer links.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p><strong>Finite Element Analysis – “Pregnant Alien” carriage</strong></p>
+                    <ul>
+                        <li>Used Autodesk Inventor’s FEA to analyze side-plate stress under combined rotational and applied forces.</li>
+                        <li>Generated a weight-reduced mesh that preserved material in high-stress regions and removed it from low-stress zones.</li>
+                        <li>The resulting shape – nicknamed the “Pregnant Alien” – cut mass while preserving stiffness where needed.</li>
+                    </ul>
+
+                    <p><strong>Performance issues at scrimmage</strong></p>
+                    <ul>
+                        <li>Arm servos could not rotate the arm fast enough, limiting cycle time.</li>
+                        <li>The belt from the arm servos slipped under moment load and could not handle sideloading from tension.</li>
+                        <li>Carbon-fiber tubes relying on friction to transmit torque slipped under arm moments, causing positional drift.</li>
+                    </ul>
+
+                    <p><strong>Carriage redesign 2 – motorization and chain drive</strong></p>
+                    <ul>
+                        <li>Replaced the arm servos with a goBILDA Yellow Jacket motor to increase both speed and torque margin.</li>
+                        <li>Replaced the belt with chain off a bevel gear to eliminate skipping and better manage sideloading.</li>
+                        <li>Connected the chain directly to new arm adapters, fully removing the slipping carbon-tube interface.</li>
+                    </ul>
+
+                    <p><strong>Global ranking &amp; impact</strong></p>
+                    <ul>
+                        <li>From an FTC Stats database of nearly 7,000 teams worldwide, Glacier achieved:
+                            <ul>
+                                <li>4th overall world ranking.</li>
+                                <li>4th offensive ranking.</li>
+                                <li>5th average autonomous rank.</li>
+                                <li>11th average driver-controlled rank.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    </div>
+
+                <div class="project-gallery">
+                    <img src="images/FTC_2023_Cover_image.jpg"
+                         alt="Glacier FTC PowerPlay robot cover photo">
+                    <img src="images/FTC_2023_Game.png"
+                         alt="FTC PowerPlay field view">
+                    <img src="images/FTC_2023_CAD_1a.png"
+                         alt="Top view of Glacier CAD">
+                    <img src="images/FTC_2023_CAD_3a.png"
+                         alt="Isometric view of Glacier robot CAD">
+                    <img src="images/FTC_2023_Final_Carriage_assembly.jpg"
+                         alt="Final Glacier carriage assembly with pulleys and slides">
+                    <img src="images/FTC_2023_FEA_generative_Design_graphic.png"
+                         alt="FEA and generative design mesh for Glacier arm plate">
+                    <img src="images/FTC_2023_World_Ranking.png"
+                         alt="Global FTC offensive power ranking table showing 4th overall">
+                    <img src="images/slide23_img48.png"
+                         alt="Glacier robot in the snow">
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. EARLY WORK -->
+        <section id="early-work" class="project-section">
+            <div class="project-header">
+                <h2>Early Engineering Work – Bike Repair Waystation</h2>
+                <span class="meta">Self-taught CAD · community infrastructure design</span>
+            </div>
+            <div class="project-body">
+                <div>
+                    <h3>Project details &amp; requirements</h3>
+                    <ul>
+                        <li>Design a public bicycle repair waystation for a local neighborhood association.</li>
+                        <li>Meet city codes and accessibility standards while fitting within a constrained site.</li>
+                        <li>Provide basic tools, a pump, and secure anchoring for long-term outdoor use.</li>
+                    </ul>
+
+                    <h3>Process</h3>
+                    <ul>
+                        <li>Self-taught CAD in SketchUp and Fusion 360 to create 3D models and presentation drawings.</li>
+                        <li>Submitted the design to a civil engineering contest, receiving first place.</li>
+                        <li>Appointed lead designer as the project moved toward real implementation:
+                            <ul>
+                                <li>Worked with city staff to confirm code compliance and safety.</li>
+                                <li>Helped draft grant applications and supporting documentation for funding.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>What I learned</h3>
+                    <ul>
+                        <li>How early design decisions affect permitting, budgets, and stakeholder buy-in.</li>
+                        <li>The value of clear visuals and CAD models when presenting to non-engineers.</li>
+                        <li>That even small community infrastructure projects demand careful attention to user experience and maintainability.</li>
+                    </ul>
+                </div>
+
+                <div class="project-gallery">
+                    <img src="images/Bike_Repair_station_Cover_image.png"
+                         alt="Concept render of community bike repair station">
+                    <img src="images/Bike_Repair_station_dimensions.png"
+                         alt="Dimensioned drawing of bike repair station concept">
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
