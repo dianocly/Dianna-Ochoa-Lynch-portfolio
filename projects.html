@@ -23,12 +23,13 @@
                     <span class="icon">🏠</span><span>Home</span></a></li>
                 <li><a class="nav-link active" href="projects.html">
                     <span class="icon">🛠️</span><span>Projects</span></a>
-                    <div class="nav-sub">
-                        <a href="#finger">Soft-Hand Robotic Finger</a>
-                        <a href="#exoskeleton">Firefighting Exoskeleton</a>
-                        <a href="#aegaeon">Aegaeon – FRC 2023</a>
-                        <a href="#glacier">Glacier – FTC PowerPlay</a>
-                        <a href="#early-work">Early Work</a>
+                        <div class="nav-sub">
+                            <a href="#finger">Teleoperated Robotic Hand</a>
+                            <a href="#cadenza">Cadenza – FRC 2024</a>
+                            <a href="#exoskeleton">Firefighting Exoskeleton</a>
+                            <a href="#aegaeon">Aegaeon – FRC 2023</a>
+                            <a href="#glacier">Glacier – FTC 2023 PowerPlay</a>
+                            <a href="#early-work">Early Work</a>
                     </div>
                 </li>
                 <li><a class="nav-link" href="resume.html">
@@ -141,7 +142,142 @@
             </div>
         </section>
 
-        <!-- 2. EXOSKELETON (NOW BELOW HAND) -->
+                <!-- 2. FRC 2024 – INDUSTRIAL DESIGN AWARD ROBOT -->
+        <section id="frc-2024" class="project-section">
+            <div class="project-header">
+                <h2>FRC 2024 – Industrial Design Award Robot</h2>
+                <span class="meta">
+                    FIRST Robotics Competition · CRESCENDO℠ presented by Haas ·
+                    General Motors Industrial Design Award – World Championship
+                </span>
+            </div>
+            <div class="project-body">
+                <div>
+                    <h3>Project details & requirements</h3>
+                    <ul>
+                        <li>
+                            Design a robot for the FRC 2024 game <em>CRESCENDO</em> capable of
+                            reliably intaking, controlling, and scoring game pieces while meeting strict
+                            size, weight, and safety constraints.
+                        </li>
+                        <li>
+                            Balance performance with industrial design principles:
+                            clean architecture, robustness, serviceability, and clear operator interfaces.
+                        </li>
+                        <li>
+                            Ensure every mechanism can be inspected and repaired quickly between matches
+                            at regional events and at the World Championship.
+                        </li>
+                        <li>
+                            Maintain a low center of gravity and predictable driving behavior for
+                            fast cycling and tight-field maneuvering.
+                        </li>
+                    </ul>
+
+                    <h3>Process & iterations</h3>
+
+                    <p><strong>System architecture and design language</strong></p>
+                    <ul>
+                        <li>
+                            Established overall robot architecture early: clear separation between
+                            drivetrain, scoring mechanisms, electronics, and cable routing to avoid
+                            interference and simplify maintenance.
+                        </li>
+                        <li>
+                            Chosen “design language” carried through the whole robot:
+                            consistent geometries, repeatable mounting patterns, and intentionally
+                            exposed fasteners for quick swaps and inspection.
+                        </li>
+                        <li>
+                            Used parametric CAD to keep key dimensions (reach, clearances, packaging
+                            around electronics) adjustable while preserving mounting patterns and
+                            subsystem interfaces.
+                        </li>
+                    </ul>
+
+                    <p><strong>Mechanism design and iteration</strong></p>
+                    <ul>
+                        <li>
+                            Designed intake, game-piece path, and scoring mechanism to work as a single
+                            system rather than separate, bolted-on subsystems, minimizing handoffs that
+                            could jam under defense.
+                        </li>
+                        <li>
+                            Iterated geometry based on field testing:
+                            adjusting roller spacing, compression, and guiding surfaces to increase
+                            throughput and reduce jams.
+                        </li>
+                        <li>
+                            Built in adjustability (slotted holes, shims, and configurable hard stops)
+                            so the drive team could tune performance between matches without re-machining parts.
+                        </li>
+                    </ul>
+
+                    <p><strong>Design for manufacturing & serviceability</strong></p>
+                    <ul>
+                        <li>
+                            Standardized fasteners, spacers, and tube profiles to reduce BOM complexity
+                            and make it easy to carry spares to events.
+                        </li>
+                        <li>
+                            Grouped components onto removable modules (e.g., mechanism “pods” and electronics
+                            plates) so subsystems could be swapped or serviced in isolation.
+                        </li>
+                        <li>
+                            Organized wiring and pneumatics using consistent color-coding, labeled harnesses,
+                            and clean routing paths to make diagnosis and repair intuitive for any pit member.
+                        </li>
+                        <li>
+                            Generated detailed drawings and assembly references to keep the build consistent
+                            even as new team members joined mid-season.
+                        </li>
+                    </ul>
+
+                    <p><strong>World Championship performance & recognition</strong></p>
+                    <ul>
+                        <li>
+                            Robot performance at regional and championship events demonstrated that the
+                            design could withstand match stress while remaining easy to service and upgrade.
+                        </li>
+                        <li>
+                            Awarded the <strong>General Motors Industrial Design Award</strong> at the
+                            World Championship, recognizing the robot for its balance of form, function,
+                            robustness, and attention to detail in mechanical and aesthetic design.
+                        </li>
+                    </ul>
+
+                    <h3>What I learned</h3>
+                    <ul>
+                        <li>
+                            How to deliberately apply industrial design principles to a competition robot:
+                            clarity of architecture, visual consistency, and intuitive access for service.
+                        </li>
+                        <li>
+                            The impact of design-for-manufacturing choices (standard hardware, modular
+                            subsystems, parametric CAD) on build speed, reliability, and ability to adapt.
+                        </li>
+                        <li>
+                            How details like cable routing, labeling, and visibility of fasteners influence
+                            both judges’ perception and the pit crew’s ability to keep the robot running.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-gallery">
+                    <!-- Replace these filenames with real 2024 robot photos -->
+                    <img src="images/FRC_2024_Cover_image.jpg"
+                         alt="FRC 2024 Industrial Design Award robot on the field">
+                    <img src="images/FRC_2024_CAD_1.jpg"
+                         alt="FRC 2024 robot CAD overview">
+                    <img src="images/FRC_2024_CAD_2.jpg"
+                         alt="Detail of FRC 2024 robot mechanism packaging">
+                    <img src="images/FRC_2024_Pit_View.jpg"
+                         alt="Robot in the pit showing clean wiring and layout">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. EXOSKELETON (NOW BELOW HAND) -->
         <section id="exoskeleton" class="project-section">
             <div class="project-header">
                 <h2>Firefighting Exoskeleton Arm (Conceptual Design)</h2>
@@ -248,7 +384,7 @@
             </div>
         </section>
 
-        <!-- 3. AEGAEON – FRC 2023 -->
+        <!-- 4. AEGAEON – FRC 2023 -->
         <section id="aegaeon" class="project-section">
             <div class="project-header">
                 <h2>Aegaeon – “The Hundred-Handed Hecatonchires” (FRC 2023)</h2>
@@ -358,7 +494,7 @@
             </div>
         </section>
 
-        <!-- 4. GLACIER – FTC POWERPLAY -->
+        <!-- 5. GLACIER – FTC POWERPLAY -->
         <section id="glacier" class="project-section">
             <div class="project-header">
                 <h2>Glacier – FTC PowerPlay Robot (Team 11329)</h2>
@@ -510,3 +646,4 @@
 </div>
 </body>
 </html>
+
