@@ -142,140 +142,187 @@
             </div>
         </section>
 
-                <!-- 2. FRC 2024 – INDUSTRIAL DESIGN AWARD ROBOT -->
-        <section id="frc-2024" class="project-section">
+        <!-- 2. CADENZA – FRC 2024 -->
+        <section id="cadenza" class="project-section">
             <div class="project-header">
-                <h2>FRC 2024 – Industrial Design Award Robot</h2>
+                <h2>Cadenza – FRC 2024 Crescendo Robot</h2>
                 <span class="meta">
-                    FIRST Robotics Competition · CRESCENDO℠ presented by Haas ·
-                    General Motors Industrial Design Award – World Championship
+                    FIRST Robotics Competition · Crescendo · Swerve drive note-cycler · GM Industrial Design Award (World Championship)
                 </span>
             </div>
             <div class="project-body">
                 <div>
-                    <h3>Project details & requirements</h3>
+                    <h3>Project details & my role</h3>
                     <ul>
                         <li>
-                            Design a robot for the FRC 2024 game <em>CRESCENDO</em> capable of
-                            reliably intaking, controlling, and scoring game pieces while meeting strict
-                            size, weight, and safety constraints.
+                            Game: FRC 2024 <em>Crescendo</em> – acquire foam “notes” from the floor, cycle them through the speaker/amp,
+                            and climb/trap on the stage for high endgame value.
                         </li>
                         <li>
-                            Balance performance with industrial design principles:
-                            clean architecture, robustness, serviceability, and clear operator interfaces.
+                            Architecture: swerve drive chassis with a front over-the-bumper intake, note elevator,
+                            and climber/trap integration designed for aggressive driving and high contact around the stage.
                         </li>
                         <li>
-                            Ensure every mechanism can be inspected and repaired quickly between matches
-                            at regional events and at the World Championship.
+                            <strong>My role:</strong> Lead designer and lead systems engineer for the robot’s mechanical systems
+                            (intake, arm, note path, climber, spares and maintenance); I did not own any programming.
                         </li>
                         <li>
-                            Maintain a low center of gravity and predictable driving behavior for
-                            fast cycling and tight-field maneuvering.
+                            Outcome: Cadenza won the <strong>Industrial Design Award sponsored by General Motors</strong>
+                            at the 2024 FRC World Championship for balancing performance, reliability, and serviceability.
                         </li>
                     </ul>
 
-                    <h3>Process & iterations</h3>
-
-                    <p><strong>System architecture and design language</strong></p>
+                    <h3>System-level goals</h3>
                     <ul>
+                        <li>Design an intake and note path that could reliably acquire notes from messy mid-field piles and tight corners.</li>
+                        <li>Ensure the robot could survive repeated high-speed collisions with the stage, other robots, and field elements.</li>
                         <li>
-                            Established overall robot architecture early: clear separation between
-                            drivetrain, scoring mechanisms, electronics, and cable routing to avoid
-                            interference and simplify maintenance.
+                            Make the intake/arm assembly modular and serviceable so damaged parts could be swapped quickly
+                            during long events and at Worlds.
                         </li>
                         <li>
-                            Chosen “design language” carried through the whole robot:
-                            consistent geometries, repeatable mounting patterns, and intentionally
-                            exposed fasteners for quick swaps and inspection.
-                        </li>
-                        <li>
-                            Used parametric CAD to keep key dimensions (reach, clearances, packaging
-                            around electronics) adjustable while preserving mounting patterns and
-                            subsystem interfaces.
+                            Coordinate subsystem design so programmers could focus on autos and trap routines without fighting
+                            inconsistent mechanical behavior.
                         </li>
                     </ul>
 
-                    <p><strong>Mechanism design and iteration</strong></p>
+                    <h3>Process & iterations – intake and note acquisition</h3>
+
+                    <p><strong>Baseline intake & early issues</strong></p>
                     <ul>
                         <li>
-                            Designed intake, game-piece path, and scoring mechanism to work as a single
-                            system rather than separate, bolted-on subsystems, minimizing handoffs that
-                            could jam under defense.
+                            The early intake could pull notes in, but testing showed inconsistent launch behavior and limited
+                            ability to spin rollers up before engaging the note.
                         </li>
                         <li>
-                            Iterated geometry based on field testing:
-                            adjusting roller spacing, compression, and guiding surfaces to increase
-                            throughput and reduce jams.
+                            Teams observed that light compliant wheels were not fully using the torque available from the motor,
+                            and that the geometry gave a weak overbite and shallow wrap on the note.
                         </li>
                         <li>
-                            Built in adjustability (slotted holes, shims, and configurable hard stops)
-                            so the drive team could tune performance between matches without re-machining parts.
+                            On-field behavior exposed problems: unreliable centering, weak grip when hitting other robots,
+                            and geometry that made stage collisions more likely.
                         </li>
                     </ul>
 
-                    <p><strong>Design for manufacturing & serviceability</strong></p>
+                    <p><strong>V2 intake concept – wider aperture & controlled overbite</strong></p>
                     <ul>
                         <li>
-                            Standardized fasteners, spacers, and tube profiles to reduce BOM complexity
-                            and make it easy to carry spares to events.
+                            Worked with subsystem leads to set design targets for a V2 intake:
+                            significantly wider effective capture width, stronger note retention, and easier tuning.
                         </li>
                         <li>
-                            Grouped components onto removable modules (e.g., mechanism “pods” and electronics
-                            plates) so subsystems could be swapped or serviced in isolation.
+                            Increased the effective intake width by roughly <strong>14 inches</strong> through geometry
+                            changes and side-plate redesign, enabling intake from more oblique angles.
                         </li>
                         <li>
-                            Organized wiring and pneumatics using consistent color-coding, labeled harnesses,
-                            and clean routing paths to make diagnosis and repair intuitive for any pit member.
+                            Specified a new roller layout using green paddle wheels and tuned overbite to improve initial
+                            contact and centering without stalling the note.
                         </li>
                         <li>
-                            Generated detailed drawings and assembly references to keep the build consistent
-                            even as new team members joined mid-season.
+                            Switched to a robust 15:1 UltraPlanetary configuration driving four 16T #25 sprockets, trading
+                            a small amount of top speed for reliable torque and predictable current behavior.
+                        </li>
+                        <li>
+                            Added and tuned a bottom HDPE plate to support notes consistently and avoid jamming at the
+                            transition into the elevator.
                         </li>
                     </ul>
 
-                    <p><strong>World Championship performance & recognition</strong></p>
+                    <p><strong>Refinement and on-robot tuning</strong></p>
                     <ul>
                         <li>
-                            Robot performance at regional and championship events demonstrated that the
-                            design could withstand match stress while remaining easy to service and upgrade.
+                            Coordinated testing sessions and requested intake videos to verify that on-robot performance
+                            matched bench testing, especially under autonomous operation.
                         </li>
                         <li>
-                            Awarded the <strong>General Motors Industrial Design Award</strong> at the
-                            World Championship, recognizing the robot for its balance of form, function,
-                            robustness, and attention to detail in mechanical and aesthetic design.
+                            Worked with the programming team to tune the intake’s current spike behavior so notes are
+                            “bitten” firmly without grinding or ejecting under collision.
+                        </li>
+                        <li>
+                            Iterated on small but critical details: button-head hardware to avoid interference with trap wheels,
+                            chain routing for reliability, and roller shaft spacing for consistent note feed-through.
+                        </li>
+                        <li>
+                            Verified that the new intake could acquire notes from the side and while brushing other robots,
+                            while keeping them secure during full-speed hits.
+                        </li>
+                    </ul>
+
+                    <h3>Reliability, spares, and systems engineering for Worlds</h3>
+
+                    <p><strong>Arm and intake arm rebuild</strong></p>
+                    <ul>
+                        <li>
+                            Before Worlds, led a full intake-arm rebuild incorporating every improvement discovered during the season:
+                        </li>
+                        <ul>
+                            <li>New shoulder MaxTube with a printed insert to lock geometry and reduce slop.</li>
+                            <li>
+                                New shoulder encoder pulley and mount with better access, eliminating backlash that
+                                affected preset repeatability.
+                            </li>
+                            <li>
+                                New forearm tube and flexure pack, pre-match hang bolt, and fully reworked wrist hardware
+                                (bearings, pulley, motor plate).
+                            </li>
+                            <li>
+                                Replaced previous over-tight 18T belt pulley with a correctly sized 17T version to achieve 
+                                proper belt tension without overloading bearings.
+                            </li>
+                        </ul>
+                        <li>
+                            Ensured the entire intake arm from shoulder down was rebuilt to a “mint” configuration for Houston,
+                            while keeping the previous arm as a complete backup.
+                        </li>
+                    </ul>
+
+                    <p><strong>Spare strategy and maintainability</strong></p>
+                    <ul>
+                        <li>
+                            Helped define the spare strategy for intake and arm: backup shafts, bottom plates, “flex packs,”
+                            wrist inserts, encoder gears, and plates were fabricated and staged.
+                        </li>
+                        <li>
+                            Coordinated with mentors to make sure swerve modules, climber parts, and intake components were
+                            cleaned, inspected, and ready for fast swap at events.
+                        </li>
+                        <li>
+                            Used Discord task lists and daily “hot wash” reviews to track subsystem status, prioritize
+                            improvements, and avoid surprises late in the build cycle.
                         </li>
                     </ul>
 
                     <h3>What I learned</h3>
                     <ul>
                         <li>
-                            How to deliberately apply industrial design principles to a competition robot:
-                            clarity of architecture, visual consistency, and intuitive access for service.
+                            How to think like a systems engineer: every intake change touches autos, driver strategy,
+                            wiring, serviceability, and even how we pack spares for a week-long event.
                         </li>
                         <li>
-                            The impact of design-for-manufacturing choices (standard hardware, modular
-                            subsystems, parametric CAD) on build speed, reliability, and ability to adapt.
+                            How to push meaningful mechanical redesigns (like the V2 intake and full arm rebuild)
+                            very late in a season without destabilizing the robot for competition.
                         </li>
                         <li>
-                            How details like cable routing, labeling, and visibility of fasteners influence
-                            both judges’ perception and the pit crew’s ability to keep the robot running.
+                            How reliability and maintainability are just as visible to judges and alliance partners
+                            as raw scoring output – and how that translates into awards at the world-championship level.
                         </li>
                     </ul>
                 </div>
 
                 <div class="project-gallery">
-                    <!-- Replace these filenames with real 2024 robot photos -->
-                    <img src="images/FRC_2024_Cover_image.jpg"
-                         alt="FRC 2024 Industrial Design Award robot on the field">
-                    <img src="images/FRC_2024_CAD_1.jpg"
-                         alt="FRC 2024 robot CAD overview">
-                    <img src="images/FRC_2024_CAD_2.jpg"
-                         alt="Detail of FRC 2024 robot mechanism packaging">
-                    <img src="images/FRC_2024_Pit_View.jpg"
-                         alt="Robot in the pit showing clean wiring and layout">
+                    <!-- Replace these with your actual Cadenza images / filenames -->
+                    <img src="images/Cadenza_Cover_image.jpg"
+                         alt="Cadenza FRC 2024 Crescendo robot on the field">
+                    <img src="images/Cadenza_Intake_V2.jpg"
+                         alt="Close-up of Cadenza V2 front intake with green paddle wheels">
+                    <img src="images/Cadenza_Arm_Rebuild.jpg"
+                         alt="Rebuilt intake arm assembly prior to Worlds">
+                    <img src="images/Cadenza_Worlds_Pit.jpg"
+                         alt="Cadenza in the pit at the FRC World Championship">
                 </div>
             </div>
         </section>
+
 
         <!-- 3. EXOSKELETON (NOW BELOW HAND) -->
         <section id="exoskeleton" class="project-section">
@@ -646,4 +693,5 @@
 </div>
 </body>
 </html>
+
 
