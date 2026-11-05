@@ -568,3 +568,14 @@ a:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline
 .spot-photo { object-position: 50% 72%; }
 .makerspace-photo { object-position: 50% 60%; }
 .experience-project-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; max-height: 540px; object-fit: cover; border-radius: 10px; }
+
+/* Lead the homepage with the three strongest engineering experiences. */
+.featured-work { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.featured-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; margin-bottom: 12px; }
+.research-photo { object-fit: contain; background: white; }
+.teaching-summary { display: flex; align-items: center; gap: 18px; font-size: 14px; }
+.teaching-summary > img { width: 90px; height: 100px; object-fit: cover; object-position: 50% 60%; border-radius: 8px; flex-shrink: 0; }
+.teaching-summary h2 { font-size: 18px; margin: 0 0 6px; }
+.teaching-summary p { margin: 0 0 6px; color: var(--text-muted); }
+@media (max-width: 880px) { .featured-work { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .teaching-summary { align-items: flex-start; gap: 12px; } .teaching-summary > img { width: 64px; height: 80px; } }
