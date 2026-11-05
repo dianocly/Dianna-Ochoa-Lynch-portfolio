@@ -521,12 +521,7 @@ a:hover {
 
 /* Sebastian: captioned technical images and opt-in video playback. */
 #sebastian { scroll-margin-top: 24px; }
-#sebastian .project-header { flex-wrap: wrap; gap: 6px 18px; }
-#sebastian .project-body { align-items: start; }
-#sebastian li { line-height: 1.6; margin-bottom: 5px; }
-#sebastian .sebastian-gallery { align-items: start; gap: 16px 12px; }
 .sebastian-figure { margin: 0; min-width: 0; }
-.sebastian-wide { grid-column: 1 / -1; }
 .sebastian-figure img { display: block; height: auto; }
 .sebastian-figure figcaption, .sebastian-source { font-size: 12px; line-height: 1.5; color: var(--text-muted); margin-top: 6px; }
 .sebastian-videos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
@@ -547,6 +542,5 @@ a:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline
     .sebastian-videos { grid-template-columns: 1fr; }
 }
 @media (max-width: 480px) {
-    #sebastian .sebastian-gallery { grid-template-columns: 1fr; }
     .page-title { font-size: 27px; }
 }
