@@ -71,46 +71,70 @@
             </div>
             <div class="project-body">
                 <div>
-                    <h3>Project details and my role</h3>
+                    <h3>Project details, requirements, and responsibilities</h3>
                     <ul>
-                        <li>Designed, fabricated, programmed, and drove Sebastian for MIT 2.007’s motorsport-themed competition, <em>Design to Survive</em>.</li>
-                        <li>Focused on tire changing: remove the retaining nut, pull the competition tire off its spindle, and reinstall both.</li>
-                        <li>Integrated three primary modules: a virtual four-bar tire gripper, a drive base, and an adjustable nut spinner.</li>
-                        <li><strong>Recognition:</strong> Brabham BT46 “Fan Car” Prize, recognizing excellent robot execution and function.</li>
+                        <li>Design, manufacture, and control a tire-changing robot for MIT 2.007’s motorsport-themed competition, <em>Design to Survive</em>.</li>
+                        <li>Remove and replace the retaining nut and tire, and push a spare tire into the scoring multiplier zone.</li>
+                        <li>Fit within a 12"×12"×16" starting box and drive underneath the tire with approximately 0.3" of ground clearance.</li>
+                        <li>Make the tire holder, drive base, and nut spinner accessible for assembly, replacement, and adjustment.</li>
+                        <li>Personally designed, fabricated, programmed, and drove the complete robot.</li>
                     </ul>
-                    <h3>System-level goals</h3>
-                    <ul>
-                        <li>Package the robot within the 12 × 12 × 16-inch starting envelope while allowing the chassis to drive underneath the tire.</li>
-                        <li>Support and manipulate the tire with approximately 0.3 inches of ground clearance, accounting for baseplate and shaft deformation under load.</li>
-                        <li>Maintain alignment during removal and replacement, and accommodate differences in nut height across field setups.</li>
-                        <li>Make mechanisms accessible and removable for assembly, troubleshooting, and iteration.</li>
-                    </ul>
-                    <h3>Design and key mechanisms</h3>
-                    <p><strong>Virtual four-bar tire gripper</strong></p>
-                    <p>Paired virtual four-bar mechanisms deployed pulling fingers while maintaining their orientation. The fingers folded passively behind the tire during acquisition and engaged it as the robot withdrew. Over-center mechanical locks supported the deployed mechanism, separating the tire-support load from the deployment actuation.</p>
-                    <p><strong>Adjustable nut spinner</strong></p>
-                    <p>A torque servo drove a formed sheet-metal hex interface to remove and reinstall the retaining nut. Three springs maintained axial contact as the nut traveled along its thread. The spinner also pushed against the tire’s center to help prevent tilting during replacement. Interchangeable, color-coded spacers set the assembly height for different field setups.</p>
-                    <p><strong>Modular baseplate and drive base</strong></p>
-                    <p>The baseplate integrated the three modules while preserving access to their mounting hardware. The tire-gripper assembly could be removed with six screws, allowing it to be serviced separately. The final drivetrain used two rear drive motors with 27:1 gearing and freely rotating front wheels.</p>
+
                     <h3>Process and iterations</h3>
+                    <p><strong>Concept and layout – strategy and supporting analysis</strong></p>
                     <ul>
-                        <li>Compared scoring strategies and used torque-speed estimates to guide actuator and transmission selection. Evaluated baseplate and shaft bending within the tight ground-clearance constraint.</li>
-                        <li>Progressed from concept sketches and cardboard mockups to acrylic mechanism prototypes and a metal assembly.</li>
-                        <li>Used physical testing to identify transmission backlash, mirrored-part alignment issues, and field interference; revised the mechanism geometry, shaft support, and baseplate accordingly.</li>
-                        <li>Addressed tire tilting during replacement by integrating support through the nut-spinner assembly.</li>
-                        <li>Redesigned wheel mounting after slipping press fits and cracking around access holes, and fabricated spacers to make spinner-height changes repeatable.</li>
+                        <li>Compared scoring strategies and used torque-speed calculations to evaluate actuator and transmission options.</li>
+                        <li>Modeled the robot and playing field in SolidWorks to develop mechanism geometry and check packaging and alignment.</li>
+                        <li>Calculated baseplate and shaft bending under tire load to evaluate material thickness and shaft sizing within the ground-clearance constraint.</li>
                     </ul>
-                    <h3>Results and lessons</h3>
-                    <p>Sebastian demonstrated tire and nut removal and replacement. The design review documented successful operation, although cycle time remained slower than the 23-second design target. The robot completed the task during seeding, won its slot on the first competition day, and executed the multiplier push during competition.</p>
-                    <p>The project strengthened my understanding of mechanical load paths, transmission backlash, and design for assembly. Testing across field setups exposed alignment sensitivity, while increased drivetrain reduction improved torque at the expense of cycle speed.</p>
+
+                    <p><strong>Acrylic prototype – tire holder and virtual four-bar</strong></p>
+                    <ul>
+                        <li>Progressed from concept sketches and cardboard mockups to an acrylic tire-holder prototype.</li>
+                        <li>Designed paired virtual four-bar mechanisms to deploy pulling fingers while maintaining their orientation.</li>
+                        <li>Allowed the fingers to fold passively behind the tire during acquisition and engage it as the robot withdrew.</li>
+                        <li>Identified backlash in the geartrain and between the drive shafts and gears, reducing control over the mechanism.</li>
+                    </ul>
+
+                    <p><strong>Metal assembly – locking and transmission fit</strong></p>
+                    <ul>
+                        <li>Incorporated over-center mechanical locks to carry the tire load without relying on the deployment servos to hold the mechanism in position.</li>
+                        <li>Reduced geartrain backlash by slightly oversizing the gears and burnishing them together on the lathe.</li>
+                        <li>Iterated on the fit between the D-shafts and internal gear profiles to reduce shaft-to-gear backlash.</li>
+                        <li>Redesigned wheel mounting after press fits slipped and cracks formed around access holes.</li>
+                    </ul>
+
+                    <p><strong>Second redesign – nut spinner and modular baseplate</strong></p>
+                    <ul>
+                        <li>Designed the baseplate to drop away from the tire holder after removing six rivets, providing access for the second redesign and final drivetrain assembly.</li>
+                        <li>Added a high-torque servo and formed sheet-metal head to remove and replace the retaining nut.</li>
+                        <li>Used three springs to maintain contact as the nut traveled along its thread, and used the spinner to support the tire’s center during replacement to prevent tilting.</li>
+                        <li>Mounted the spinner with three bolts and premeasured, machined, color-coded spacers to adjust its height for different field setups.</li>
+                        <li>Finalized the drivetrain with two rear drive motors on 27:1 gearing and freely rotating front wheels.</li>
+                    </ul>
+
+                    <p><strong>Field testing – traction and cycle time</strong></p>
+                    <ul>
+                        <li>Testing revealed insufficient traction to pull the tire off its support.</li>
+                        <li>Added weight near the rear drive wheels to move the center of gravity back and increase normal force on the driving tires.</li>
+                        <li>Added rubber to the drive tires to increase grip and successfully pull the tire free.</li>
+                        <li>Increased drivetrain reduction improved torque at the expense of speed; the complete tire-and-nut cycle remained slower than the 23-second design target.</li>
+                    </ul>
+
+                    <h3>Competition performance</h3>
+                    <ul>
+                        <li><strong>Day 1:</strong> placed first in competition.</li>
+                        <li>Successfully completed all intended tasks during competition, including tire and nut removal and replacement and the scoring multiplier push.</li>
+                        <li><strong>Brabham BT46 “Fan Car” Prize:</strong> recognized for excellent robot execution and function.</li>
+                    </ul>
                 </div>
                 <div class="project-gallery sebastian-gallery" aria-label="Sebastian design and development photographs">
-<figure class="sebastian-figure sebastian-wide"><a href="images/sebastian/overview.webp"><img src="images/sebastian/overview.webp" alt="Sebastian tire-changing robot with gripper, drivetrain, and nut spinner assembled" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Sebastian: the integrated tire gripper, drive base, and nut spinner.</figcaption></figure>
-<figure class="sebastian-figure"><a href="images/sebastian/concept.webp"><img src="images/sebastian/concept.webp" alt="Annotated notebook sketch of the tire-gripper linkage and pulling fingers" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Concept sketch: linkage geometry and tire engagement.</figcaption></figure>
-<figure class="sebastian-figure"><a href="images/sebastian/prototype.webp"><img src="images/sebastian/prototype.webp" alt="Acrylic tire-gripper prototype on a wooden test base" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Acrylic prototype used to test the mechanism before metal fabrication.</figcaption></figure>
-<figure class="sebastian-figure"><a href="images/sebastian/lock.webp"><img src="images/sebastian/lock.webp" alt="Over-center locking link supporting the gripper shaft" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Over-center lock: supporting the tire independently of deployment actuation.</figcaption></figure>
-<figure class="sebastian-figure"><a href="images/sebastian/spinner.webp"><img src="images/sebastian/spinner.webp" alt="Spring-loaded nut-spinner head and adjustable mounting plates" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Nut spinner: a formed hex interface with spring-loaded axial compliance.</figcaption></figure>
-<figure class="sebastian-figure sebastian-wide"><a href="images/sebastian/modularity.webp"><img src="images/sebastian/modularity.webp" alt="Underside of Sebastian showing the baseplate cutouts and module mounting hardware" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Modular baseplate: access to mounting hardware and removable assemblies.</figcaption></figure>
+<figure class="sebastian-figure sebastian-wide"><a href="images/sebastian/overview.webp"><img src="images/sebastian/overview.webp" alt="Sebastian tire-changing robot with tire holder, drivetrain, and nut spinner assembled" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Final assembly: tire holder, drive base, and nut spinner.</figcaption></figure>
+<figure class="sebastian-figure"><a href="images/sebastian/concept.webp"><img src="images/sebastian/concept.webp" alt="Annotated notebook sketch of the tire-holder linkage and pulling fingers" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Concept sketch: linkage geometry and tire engagement.</figcaption></figure>
+<figure class="sebastian-figure"><a href="images/sebastian/prototype.webp"><img src="images/sebastian/prototype.webp" alt="Acrylic tire-holder prototype on a wooden test base" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Acrylic prototype used to test the mechanism before metal fabrication.</figcaption></figure>
+<figure class="sebastian-figure"><a href="images/sebastian/lock.webp"><img src="images/sebastian/lock.webp" alt="Over-center locking link supporting the tire-holder shaft" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Over-center lock supporting the deployed tire holder.</figcaption></figure>
+<figure class="sebastian-figure"><a href="images/sebastian/spinner.webp"><img src="images/sebastian/spinner.webp" alt="Spring-loaded nut-spinner head and adjustable mounting plates" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Spring-loaded nut spinner with an adjustable height mount.</figcaption></figure>
+<figure class="sebastian-figure sebastian-wide"><a href="images/sebastian/modularity.webp"><img src="images/sebastian/modularity.webp" alt="Underside of Sebastian showing the baseplate cutouts and module mounting hardware" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Removable baseplate: underside openings provide access to mounting hardware.</figcaption></figure>
 <figure class="sebastian-figure sebastian-wide"><a href="images/sebastian/tire-handling.webp"><img src="images/sebastian/tire-handling.webp" alt="Sebastian positioned under a competition tire with its spinner aligned to the spindle" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Integrated testing: tire support and nut-spinner alignment on the field.</figcaption></figure>
                 </div>
             </div>
