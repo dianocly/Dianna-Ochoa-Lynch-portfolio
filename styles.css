@@ -562,3 +562,9 @@ a:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline
 @media (max-width: 880px) {
     .project-jump { display: block; }
 }
+
+/* Experience photography follows the shared caption-free image treatment. */
+.experience-card-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; margin-bottom: 12px; }
+.spot-photo { object-position: 50% 72%; }
+.makerspace-photo { object-position: 50% 60%; }
+.experience-project-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; max-height: 540px; object-fit: cover; border-radius: 10px; }
