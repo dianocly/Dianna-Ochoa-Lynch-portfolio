@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects – Dianna Lynch</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,6 +30,7 @@
                         <span class="icon">🛠️</span><span>Projects</span>
                     </a>
                     <div class="nav-sub">
+                        <a href="#sebastian">Sebastian – MIT 2.007</a>
                         <a href="#finger">Teleoperated Robotic Hand</a>
                         <a href="#cadenza">Cadenza – FRC 2024</a>
                         <a href="#exoskeleton">Firefighting Exoskeleton</a>
@@ -55,11 +57,82 @@
             <div class="page-kicker">Projects</div>
             <h1 class="page-title">Engineering work</h1>
             <p class="page-subtitle">
-                Detailed project write-ups for my work and research, including a teleoperated robotic hand,
+                Detailed project write-ups for my work and research, including Sebastian, my MIT 2.007 tire-changing robot, a teleoperated robotic hand,
                 conceptual design of exoskeleton augmentation, and competition robotics including Cadenza,
                 Aegaeon (FRC), and Glacier (FTC).
             </p>
         </header>
+
+        <!-- SEBASTIAN – MIT 2.007 -->
+        <section id="sebastian" class="project-section">
+            <div class="project-header">
+                <h2>Sebastian – MIT 2.007 Tire-Changing Robot</h2>
+                <span class="meta">Design and Manufacturing I · Spring 2026 · Individual project</span>
+            </div>
+            <div class="project-body">
+                <div>
+                    <h3>Project details and my role</h3>
+                    <ul>
+                        <li>Designed, fabricated, programmed, and drove Sebastian for MIT 2.007’s motorsport-themed competition, <em>Design to Survive</em>.</li>
+                        <li>Focused on tire changing: remove the retaining nut, pull the competition tire off its spindle, and reinstall both.</li>
+                        <li>Integrated three primary modules: a virtual four-bar tire gripper, a drive base, and an adjustable nut spinner.</li>
+                        <li><strong>Recognition:</strong> Brabham BT46 “Fan Car” Prize, recognizing excellent robot execution and function.</li>
+                    </ul>
+                    <h3>System-level goals</h3>
+                    <ul>
+                        <li>Package the robot within the 12 × 12 × 16-inch starting envelope while allowing the chassis to drive underneath the tire.</li>
+                        <li>Support and manipulate the tire with approximately 0.3 inches of ground clearance, accounting for baseplate and shaft deformation under load.</li>
+                        <li>Maintain alignment during removal and replacement, and accommodate differences in nut height across field setups.</li>
+                        <li>Make mechanisms accessible and removable for assembly, troubleshooting, and iteration.</li>
+                    </ul>
+                    <h3>Design and key mechanisms</h3>
+                    <p><strong>Virtual four-bar tire gripper</strong></p>
+                    <p>Paired virtual four-bar mechanisms deployed pulling fingers while maintaining their orientation. The fingers folded passively behind the tire during acquisition and engaged it as the robot withdrew. Over-center mechanical locks supported the deployed mechanism, separating the tire-support load from the deployment actuation.</p>
+                    <p><strong>Adjustable nut spinner</strong></p>
+                    <p>A torque servo drove a formed sheet-metal hex interface to remove and reinstall the retaining nut. Three springs maintained axial contact as the nut traveled along its thread. The spinner also pushed against the tire’s center to help prevent tilting during replacement. Interchangeable, color-coded spacers set the assembly height for different field setups.</p>
+                    <p><strong>Modular baseplate and drive base</strong></p>
+                    <p>The baseplate integrated the three modules while preserving access to their mounting hardware. The tire-gripper assembly could be removed with six screws, allowing it to be serviced separately. The final drivetrain used two rear drive motors with 27:1 gearing and freely rotating front wheels.</p>
+                    <h3>Process and iterations</h3>
+                    <ul>
+                        <li>Compared scoring strategies and used torque-speed estimates to guide actuator and transmission selection. Evaluated baseplate and shaft bending within the tight ground-clearance constraint.</li>
+                        <li>Progressed from concept sketches and cardboard mockups to acrylic mechanism prototypes and a metal assembly.</li>
+                        <li>Used physical testing to identify transmission backlash, mirrored-part alignment issues, and field interference; revised the mechanism geometry, shaft support, and baseplate accordingly.</li>
+                        <li>Addressed tire tilting during replacement by integrating support through the nut-spinner assembly.</li>
+                        <li>Redesigned wheel mounting after slipping press fits and cracking around access holes, and fabricated spacers to make spinner-height changes repeatable.</li>
+                    </ul>
+                    <h3>Results and lessons</h3>
+                    <p>Sebastian demonstrated tire and nut removal and replacement. The design review documented successful operation, although cycle time remained slower than the 23-second design target. The robot completed the task during seeding, won its slot on the first competition day, and executed the multiplier push during competition.</p>
+                    <p>The project strengthened my understanding of mechanical load paths, transmission backlash, and design for assembly. Testing across field setups exposed alignment sensitivity, while increased drivetrain reduction improved torque at the expense of cycle speed.</p>
+                </div>
+                <div class="project-gallery sebastian-gallery" aria-label="Sebastian design and development photographs">
+<figure class="sebastian-figure sebastian-wide"><a href="images/sebastian/overview.webp"><img src="images/sebastian/overview.webp" alt="Sebastian tire-changing robot with gripper, drivetrain, and nut spinner assembled" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Sebastian: the integrated tire gripper, drive base, and nut spinner.</figcaption></figure>
+<figure class="sebastian-figure"><a href="images/sebastian/concept.webp"><img src="images/sebastian/concept.webp" alt="Annotated notebook sketch of the tire-gripper linkage and pulling fingers" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Concept sketch: linkage geometry and tire engagement.</figcaption></figure>
+<figure class="sebastian-figure"><a href="images/sebastian/prototype.webp"><img src="images/sebastian/prototype.webp" alt="Acrylic tire-gripper prototype on a wooden test base" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Acrylic prototype used to test the mechanism before metal fabrication.</figcaption></figure>
+<figure class="sebastian-figure"><a href="images/sebastian/lock.webp"><img src="images/sebastian/lock.webp" alt="Over-center locking link supporting the gripper shaft" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Over-center lock: supporting the tire independently of deployment actuation.</figcaption></figure>
+<figure class="sebastian-figure"><a href="images/sebastian/spinner.webp"><img src="images/sebastian/spinner.webp" alt="Spring-loaded nut-spinner head and adjustable mounting plates" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Nut spinner: a formed hex interface with spring-loaded axial compliance.</figcaption></figure>
+<figure class="sebastian-figure sebastian-wide"><a href="images/sebastian/modularity.webp"><img src="images/sebastian/modularity.webp" alt="Underside of Sebastian showing the baseplate cutouts and module mounting hardware" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Modular baseplate: access to mounting hardware and removable assemblies.</figcaption></figure>
+<figure class="sebastian-figure sebastian-wide"><a href="images/sebastian/tire-handling.webp"><img src="images/sebastian/tire-handling.webp" alt="Sebastian positioned under a competition tire with its spinner aligned to the spindle" width="1600" height="1200" loading="lazy" decoding="async"></a><figcaption>Integrated testing: tire support and nut-spinner alignment on the field.</figcaption></figure>
+                </div>
+            </div>
+            <h3>Competition footage and design interview</h3>
+            <div class="sebastian-videos">
+                <figure class="sebastian-figure">
+                    <video controls playsinline preload="none" poster="images/sebastian/competition-poster.webp" width="1280" height="720" aria-label="Sebastian competition footage, 2 minutes 2 seconds">
+                        <source src="videos/sebastian-competition.mp4" type="video/mp4">
+                        <a href="videos/sebastian-competition.mp4">Watch the competition clip</a>.
+                    </video>
+                    <figcaption>Competition footage · 2:02 · May 11–12 broadcast, 55:58–58:00.</figcaption>
+                </figure>
+                <figure class="sebastian-figure">
+                    <video controls playsinline preload="none" poster="images/sebastian/interview-poster.webp" width="1280" height="720" aria-label="Sebastian design interview, 1 minute 40 seconds">
+                        <source src="videos/sebastian-interview.mp4" type="video/mp4">
+                        <a href="videos/sebastian-interview.mp4">Watch the design interview</a>.
+                    </video>
+                    <figcaption>Design interview · 1:40 · May 11–12 broadcast, 58:00–59:40.</figcaption>
+                </figure>
+            </div>
+            <p class="sebastian-source">Footage: <a href="https://web.mit.edu/webcast/2.007/">MIT 2.007 webcast</a> · <a href="https://vimeo.com/1187065245">May 11–12 recording</a>.</p>
+        </section>
 
         <!-- 1. SOFT-HAND FINGER -->
         <section id="finger" class="project-section">
