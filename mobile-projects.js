@@ -4,7 +4,7 @@
     const mobile = window.matchMedia('(max-width: 880px)');
     const plans = {
         sebastian: [[null, [0]], ['Acrylic prototype', [1]], ['Metal assembly', [2]], ['Second redesign', [3]], ['Field testing', [5, 4]], ['Competition performance', [6]]],
-        finger: [[null, [6]], ['Prototype 1', [0]], ['Prototype 2', [1, 2]], ['Prototype 3', [3, 4]], ['Prototype 4', [5]], ['Capstan gearbox', [7, 8]], ['Further development', [9, 10, 11]]],
+        finger: [[null, [11]], ['Prototype 1', [0]], ['Prototype 2', [1, 2]], ['Prototype 3', [3, 4]], ['Prototype 4', [5]], ['Capstan gearbox', [6, 7, 8]], ['Further development', [9, 10]]],
         cadenza: [[null, [2]], ['System-level goals', [0, 1]], ['Refinement and on-robot', [3]], ['Arm and intake arm rebuild', [5]], ['Spare strategy', [4, 6]], ['What I learned', [7, 8, 9]]],
         exoskeleton: [[null, [2]], ['Design criteria via', [0]], ['Artificial muscle concept', [1]], [false, [3]]],
         aegaeon: [[null, [0]], ['Process and iterations', [1]], ['Pneumatic geometry', [2]], ['Version 1', [3]], ['Redesign', [4]], ['Season performance', [5]]],
