@@ -603,3 +603,13 @@ a:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline
 .project-card-link:hover .project-card-cta { text-decoration: underline; }
 .project-card:has(.project-card-link:hover) { border-color: var(--accent); }
 @media (prefers-reduced-motion: no-preference) { .project-card { transition: border-color .15s ease; } }
+
+/* Feature the design interview before the detailed 2.007 write-up. */
+.interview-highlight { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.4fr); gap: 24px; align-items: center; padding: 22px; margin: 18px 0 28px; border: 1px solid #b6d8f5; border-left: 4px solid var(--accent); border-radius: 10px; background: #f0f7fd; scroll-margin-top: 24px; }
+.interview-kicker { color: #175e9c; font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.interview-intro h3 { font-size: 23px; margin: 10px 0; }
+.interview-intro p { font-size: 14px; line-height: 1.65; margin: 0 0 16px; }
+.interview-direct-link { display: inline-block; padding: 10px 14px; border-radius: 6px; background: #1769aa; color: white; font-size: 14px; font-weight: 600; }
+.interview-highlight video, .sebastian-competition video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #111827; border-radius: 8px; }
+.sebastian-competition { max-width: 620px; }
+@media (max-width: 880px) { .interview-highlight { grid-template-columns: 1fr; padding: 18px; gap: 18px; } }
