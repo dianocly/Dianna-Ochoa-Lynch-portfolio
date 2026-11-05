@@ -521,6 +521,7 @@ a:hover {
 
 /* Sebastian: captioned technical images and opt-in video playback. */
 #sebastian { scroll-margin-top: 24px; }
+#sebastian .sebastian-gallery { align-content: start; }
 .sebastian-figure { margin: 0; min-width: 0; }
 .sebastian-figure img { display: block; height: auto; }
 .sebastian-figure figcaption, .sebastian-source { font-size: 12px; line-height: 1.5; color: var(--text-muted); margin-top: 6px; }
