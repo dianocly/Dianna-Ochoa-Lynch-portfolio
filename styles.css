@@ -605,3 +605,9 @@ a:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline
 @media (prefers-reduced-motion: no-preference) { .project-card { transition: border-color .15s ease; } }
 
 #sebastian-interview { scroll-margin-top: 24px; }
+
+.homepage .home-contact { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 14px; }
+.homepage .home-academics { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+.project-note { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+#finger .research-drawing { display: block; min-width: 0; }
+#finger .research-drawing img { display: block; width: 100%; height: auto; }
