@@ -545,3 +545,20 @@ a:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline
 @media (max-width: 480px) {
     .page-title { font-size: 27px; }
 }
+
+/* Shared reading and navigation details. */
+.project-body-text { grid-template-columns: 1fr; }
+.project-body-text > div { max-width: 85ch; }
+.skip-link { position: absolute; left: 12px; top: -80px; z-index: 10; padding: 10px 14px; background: white; border: 2px solid var(--accent); border-radius: 6px; }
+.skip-link:focus { top: 12px; }
+.resume-item-header { flex-wrap: wrap; gap: 4px 16px; }
+.card-header { flex-wrap: wrap; gap: 6px; }
+.card-badge { max-width: 100%; }
+.hero-meta, .resume-item-sub, .card-body, .page-subtitle { overflow-wrap: anywhere; }
+
+.project-jump { display: none; margin-bottom: 24px; }
+.project-jump summary { cursor: pointer; font-weight: 600; }
+.project-jump ul { padding-left: 20px; line-height: 1.8; font-size: 14px; }
+@media (max-width: 880px) {
+    .project-jump { display: block; }
+}

@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dianna E. Ochoa Lynch’s mechanical engineering portfolio: Boston Dynamics Atlas actuation, MIT robotics research, and competition robot design.">
     <title>Dianna Lynch – Engineering Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261105">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <div class="layout">
     <aside class="sidebar">
         <div class="brand">
@@ -21,7 +23,7 @@
             <div class="nav-section-label">Pages</div>
             <ul class="nav-list">
                 <li>
-                    <a class="nav-link active" href="index.html">
+                    <a class="nav-link active" aria-current="page" href="index.html">
                         <span class="icon">🏠</span><span>Home</span>
                     </a>
                 </li>
@@ -31,7 +33,8 @@
                     </a>
                     <div class="nav-sub">
                         <a href="projects.html#sebastian">Sebastian – MIT 2.007</a>
-                        <a href="projects.html#finger">Anthropomorphic Tele-Hand | finger </a>
+                        <a href="projects.html#boston-dynamics">Boston Dynamics – Atlas Actuation</a>
+                        <a href="projects.html#finger">Teleoperated Robotic Hand</a>
                         <a href="projects.html#cadenza">Cadenza – FRC 2024</a>
                         <a href="projects.html#exoskeleton">Firefighting Exoskeleton</a>
                         <a href="projects.html#aegaeon">Aegaeon – FRC 2023</a>
@@ -48,12 +51,11 @@
         </div>
 
         <div class="sidebar-footer">
-            Built for a bright theme, optimized for laptops.
-            Images live in <code>/images</code>.
+            Mechanical design, manufacturing, and robotics — from concept to tested hardware.
         </div>
     </aside>
 
-    <main class="main">
+    <main id="main-content" class="main">
         <header>
             <div class="page-kicker">Portfolio</div>
             <h1 class="page-title">Mechanical Engineering and Design Portfolio</h1>
@@ -72,8 +74,8 @@
                 <h2 style="margin: 4px 0 4px;">Hi, I’m Dianna E. Ochoa Lynch.</h2>
                 <p>
                     I am an undergraduate mechanical engineering student at MIT, specializing in robotics and
-                    mechanism design. My work spans high-performance teleoperated humanoid systems,
-                    human-augmentation concepts, and competition robots.
+                    mechanism design. My work spans actuator components at Boston Dynamics,
+                    tendon-driven robotics research at MIT CSAIL, and competition robots.
                 </p>
                 <p>
                     I enjoy taking ideas all the way from early pencil sketches through parametric CAD,
@@ -96,14 +98,39 @@
 
             <div class="hero-side">
                 <div class="hero-photo-wrap">
-                    <img src="images/img_4844.jpg"
+                    <img fetchpriority="high" decoding="async" src="images/img_4844.jpg"
                          alt="Portrait of Dianna Lynch on the MIT athletic fields"
                          class="hero-photo">
                 </div>
                 <div class="hero-tag-card">
-                    Currently: B.S. Mechanical Engineering and Material Science at MIT, researcher in robotics with
-                    the Distributed Robotics Laboratory @ MIT CSAIL, and long-time FIRST student and mentor.
+                    B.S. candidate in Mechanical Engineering at MIT, Class of 2028, with a minor in Archaeology and Materials.
+                    Experience in Atlas actuation at Boston Dynamics, robotics research at MIT CSAIL, and FIRST robotics.
                 </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title-row">
+                <h2>Recent experience</h2>
+                <span class="tagline">Industry, research, and teaching</span>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-title">Boston Dynamics – Atlas Actuation</div>
+                    <div class="card-subtitle">Mechanical Engineering Intern · June–August 2026</div>
+                    <div class="card-body">
+                        <p>Redesigned injection-molded actuator components and worked with a supplier to reduce actuator plastic-part costs by 60%. Contributed to materials selection, failure analysis, and manufacturing tooling.</p>
+                        <a href="projects.html#boston-dynamics">Read about my work →</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-title">MIT Global Teaching Labs – Spain</div>
+                    <div class="card-subtitle">Makerspace Lead &amp; STEM Instructor · January–February 2026</div>
+                    <div class="card-body">
+                        <p>Led makerspace instruction in Mollerussa, guiding students from sketches and CAD to physical prototypes through rapid prototyping and iterative mechanical design.</p>
+                        <a href="resume.html#global-teaching-labs">View teaching experience →</a>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -126,7 +153,7 @@
                 <!-- 1. Teleoperated Robotic Hand -->
                 <article class="card">
                     <a href="projects.html#finger" style="display:block; text-decoration:none; color:inherit;">
-                        <img src="images/Finger_Assembly_Good.jpg"
+                        <img loading="lazy" decoding="async" src="images/Finger_Assembly_Good.jpg"
                              alt="Soft-Hand robotic finger prototype on test stand"
                              style="width:100%; border-radius:10px; border:1px solid #e5e7eb; margin-bottom:8px;">
 
@@ -141,8 +168,8 @@
                         <div class="card-body">
                             <ul>
                                 <li>
-                                    Ongoing project focused on designing a highly anatomically accurate robotic hand
-                                    for precise teleoperation in a wide range of fields.
+                                    Designed and manufactured tendon-driven finger prototypes for anthropomorphic
+                                    teleoperation research at MIT CSAIL, September 2024–May 2026.
                                 </li>
                             </ul>
                             <div class="chip-row">
@@ -157,7 +184,7 @@
                 <!-- 2. Cadenza – FRC 2024 -->
                 <article class="card">
                     <a href="projects.html#cadenza" style="display:block; text-decoration:none; color:inherit;">
-                        <img src="images/IMG_8328.JPG"
+                        <img loading="lazy" decoding="async" src="images/IMG_8328.JPG"
                              alt="Cadenza FRC 2024 Crescendo robot on the field"
                              style="width:100%; border-radius:10px; border:1px solid #e5e7eb; margin-bottom:8px;">
 
@@ -166,7 +193,7 @@
                             <div class="card-badge">Competition · Industrial Design Award</div>
                         </div>
                         <div class="card-subtitle">
-                            World-championship robot recognized by General Motors for industrial design – high-reliability
+                            Robot recognized with the Industrial Design Award at the FRC World Championship – high-reliability
                             note cycling and robust intake architecture.
                         </div>
                         <div class="card-body">
@@ -186,7 +213,7 @@
                 <!-- 3. Glacier -->
                 <article class="card">
                     <a href="projects.html#glacier" style="display:block; text-decoration:none; color:inherit;">
-                        <img src="images/FTC_2023_Cover_image.jpg"
+                        <img loading="lazy" decoding="async" src="images/FTC_2023_Cover_image.jpg"
                              alt="Glacier FTC PowerPlay robot on the field"
                              style="width:100%; border-radius:10px; border:1px solid #e5e7eb; margin-bottom:8px;">
 
@@ -195,7 +222,7 @@
                             <div class="card-badge">Competition</div>
                         </div>
                         <div class="card-subtitle">
-                            World-class FTC robot with a coaxial virtual four-bar on a compact mecanum drive.
+                            FTC robot ranked 4th overall globally, with a coaxial virtual four-bar on a compact mecanum drive.
                         </div>
                         <div class="card-body">
                             <ul>
@@ -226,7 +253,7 @@
                     <div class="card-title">Projects</div>
                     <div class="card-body">
                         Read full engineering write-ups with images and diagrams for each major project:
-                        Soft-Hand finger, Cadenza, Aegaeon, Glacier, exoskeleton arm, and early work.
+                        Sebastian, Boston Dynamics, the Soft-Hand finger, Cadenza, Aegaeon, Glacier, exoskeleton arm, and early work.
                         <div style="margin-top:8px;">
                             <a href="projects.html">Go to Projects →</a>
                         </div>

@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Dianna Lynch’s engineering projects, from Atlas actuator components and tendon-driven robotic fingers to MIT 2.007 and FIRST competition robots.">
     <title>Projects – Dianna Lynch</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261105">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <div class="layout">
     <aside class="sidebar">
         <div class="brand">
@@ -26,17 +28,18 @@
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link active" href="projects.html">
+                    <a class="nav-link active" aria-current="page" href="projects.html">
                         <span class="icon">🛠️</span><span>Projects</span>
                     </a>
                     <div class="nav-sub">
-                        <a href="#sebastian">Sebastian – MIT 2.007</a>
-                        <a href="#finger">Teleoperated Robotic Hand</a>
-                        <a href="#cadenza">Cadenza – FRC 2024</a>
-                        <a href="#exoskeleton">Firefighting Exoskeleton</a>
-                        <a href="#aegaeon">Aegaeon – FRC 2023</a>
-                        <a href="#glacier">Glacier – FTC 2023 PowerPlay</a>
-                        <a href="#early-work">Early Work</a>
+                        <a href="projects.html#sebastian">Sebastian – MIT 2.007</a>
+                        <a href="projects.html#boston-dynamics">Boston Dynamics – Atlas Actuation</a>
+                        <a href="projects.html#finger">Teleoperated Robotic Hand</a>
+                        <a href="projects.html#cadenza">Cadenza – FRC 2024</a>
+                        <a href="projects.html#exoskeleton">Firefighting Exoskeleton</a>
+                        <a href="projects.html#aegaeon">Aegaeon – FRC 2023</a>
+                        <a href="projects.html#glacier">Glacier – FTC PowerPlay</a>
+                        <a href="projects.html#early-work">Early Work</a>
                     </div>
                 </li>
                 <li>
@@ -48,20 +51,34 @@
         </div>
 
         <div class="sidebar-footer">
-            Scroll to see detailed write-ups; each section mirrors the structure of the original portfolio slides.
+            Explore the design process, prototypes, and results behind each project.
         </div>
     </aside>
 
-    <main class="main">
+    <main id="main-content" class="main">
         <header>
             <div class="page-kicker">Projects</div>
             <h1 class="page-title">Engineering work</h1>
             <p class="page-subtitle">
-                Detailed project write-ups for my work and research, including Sebastian, my MIT 2.007 tire-changing robot, a teleoperated robotic hand,
-                conceptual design of exoskeleton augmentation, and competition robotics including Cadenza,
-                Aegaeon (FRC), and Glacier (FTC).
+                Engineering work in actuator design and manufacturing at Boston Dynamics, tendon-driven robotics
+                research at MIT CSAIL, and competition robotics — including Sebastian, Cadenza, Aegaeon, and Glacier.
             </p>
         </header>
+
+        <details class="project-jump">
+            <summary>Jump to a project</summary>
+            <ul>
+                <li><a href="projects.html#sebastian">Sebastian – MIT 2.007</a></li>
+                <li><a href="projects.html#boston-dynamics">Boston Dynamics – Atlas Actuation</a></li>
+                <li><a href="projects.html#finger">Teleoperated Robotic Hand</a></li>
+                <li><a href="projects.html#cadenza">Cadenza – FRC 2024</a></li>
+                <li><a href="projects.html#exoskeleton">Firefighting Exoskeleton</a></li>
+                <li><a href="projects.html#aegaeon">Aegaeon – FRC 2023</a></li>
+                <li><a href="projects.html#glacier">Glacier – FTC PowerPlay</a></li>
+                <li><a href="projects.html#early-work">Early Work</a></li>
+            </ul>
+        </details>
+
 
         <!-- SEBASTIAN – MIT 2.007 -->
         <section id="sebastian" class="project-section">
@@ -158,11 +175,41 @@
             <p class="sebastian-source">Footage: <a href="https://web.mit.edu/webcast/2.007/">MIT 2.007 webcast</a> · <a href="https://vimeo.com/1187065245">May 11–12 recording</a>.</p>
         </section>
 
+        <!-- BOSTON DYNAMICS – ATLAS ACTUATION -->
+        <section id="boston-dynamics" class="project-section">
+            <div class="project-header">
+                <h2>Boston Dynamics – Atlas Actuation</h2>
+                <span class="meta">Mechanical Engineering Intern · June–August 2026 · Waltham, MA</span>
+            </div>
+            <div class="project-body project-body-text">
+                <div>
+                    <h3>Project details and responsibilities</h3>
+                    <ul>
+                        <li>Contributed to actuator component design, materials selection, failure analysis, and manufacturing R&amp;D on the Atlas Actuation team.</li>
+                    </ul>
+                    <h3>Process and engineering work</h3>
+                    <p><strong>Component redesign and materials selection</strong></p>
+                    <ul>
+                        <li>Redesigned injection-molded actuator components and collaborated with a supplier on sourcing, reducing actuator plastic-part costs by 60%.</li>
+                        <li>Led material selection for actuator-internal plastic components, balancing operating temperature range, chemical compatibility, and injection-molding requirements.</li>
+                    </ul>
+                    <p><strong>Failure analysis and manufacturing support</strong></p>
+                    <ul>
+                        <li>Investigated actuator failures during assembly through root cause analysis and failure-data tracking.</li>
+                        <li>Developed diagnostic guides and documented findings to support design improvements.</li>
+                        <li>Co-designed a soldering fixture with a senior engineer to support manufacturing R&amp;D for actuator technology.</li>
+                        <li>Designed and fabricated an actuator cross-sectional model for internal demonstrations and technical instruction.</li>
+                    </ul>
+                    <p>Learn about the platform: <a href="https://bostondynamics.com/products/atlas/">Atlas at Boston Dynamics</a>.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- 1. SOFT-HAND FINGER -->
         <section id="finger" class="project-section">
             <div class="project-header">
                 <h2>Soft-Hand Inspired Robotic Finger</h2>
-                <span class="meta">Teleoperated tendon-driven finger · 4 major prototype generations</span>
+                <span class="meta">MIT CSAIL · September 2024–May 2026 · 4 major prototype generations</span>
             </div>
             <div class="project-body">
                 <div>
@@ -217,39 +264,38 @@
                         <li>Prepared exploded views and basic drawings so the finger can be integrated into a larger hand as a standard module.</li>
                     </ul>
 
-                    <h3>Future project scope</h3>
+                    <p><strong>Capstan gearbox – transmission development</strong></p>
                     <ul>
-                        <li>
-                            This project is ongoing, and I plan to continue to pursue it alongside my education.
-                            As this project continues, we hope to expand the finger design into a larger full-scale
-                            hand, incorporating a novel multi-stage capstan gearbox to create high-precision,
-                            low-backlash control. We then plan to build a full teleoperation control scheme,
-                            ideally integrating haptic feedback and response for high-precision applications,
-                            including surgery.
-                        </li>
+                        <li>Co-designed a multi-DoF capstan tendon transmission to minimize backlash and improve force fidelity for haptic feedback.</li>
+                        <li>Developed and prototyped a 126:1 multi-stage capstan gearbox, iterating helix geometry, reduction staging, and cable tracking.</li>
+                        <li>Used a finger rotation speed of approximately 1000°/s and a 20 N grip-force requirement as design targets for transmission development.</li>
+                    </ul>
+                    <h3>Further development</h3>
+                    <ul>
+                        <li>Identified next steps in full-hand integration, teleoperation control, and haptic feedback, building on the serviceable finger and capstan transmission prototypes.</li>
                     </ul>
                 </div>
 
                 <div class="project-gallery">
-                    <img src="images/Finger_Parametric_Sketch.png"
+                    <img loading="lazy" decoding="async" src="images/Finger_Parametric_Sketch.png"
                          alt="Parametric sketch of tendon-driven robotic finger">
-                    <img src="images/Finger_Prototype_1a.png"
+                    <img loading="lazy" decoding="async" src="images/Finger_Prototype_1a.png"
                          alt="Early tendon-driven finger prototype, side view">
-                    <img src="images/Finger_Prototype_1b.png"
+                    <img loading="lazy" decoding="async" src="images/Finger_Prototype_1b.png"
                          alt="Joint assembly detail of the robotic finger">
-                    <img src="images/Finger_Prototype_2b.png"
+                    <img loading="lazy" decoding="async" src="images/Finger_Prototype_2b.png"
                          alt="Second-generation robotic finger prototype assembled">
-                    <img src="images/Finger_Thumb_Prototype.jpg"
+                    <img loading="lazy" decoding="async" src="images/Finger_Thumb_Prototype.jpg"
                          alt="Thumb joint prototype and tendon routing concept">
-                    <img src="images/Finger_Prototype_3a.jpg"
+                    <img loading="lazy" decoding="async" src="images/Finger_Prototype_3a.jpg"
                          alt="Third-generation robotic finger prototype">
-                    <img src="images/Finger_Prototype_4a.jpg"
+                    <img loading="lazy" decoding="async" src="images/Finger_Prototype_4a.jpg"
                          alt="Fourth-generation, serviceable Mk1 finger prototype">
-                    <img src="images/Finger_Rigging.jpg"
+                    <img loading="lazy" decoding="async" src="images/Finger_Rigging.jpg"
                          alt="Rigging tendons on a finger prototype">
-                    <img src="images/IMG_1008.jpg"
+                    <img loading="lazy" decoding="async" src="images/IMG_1008.jpg"
                          alt="Finger prototype during assembly">
-                    <img src="images/Finger_Assembly_Good.jpg"
+                    <img loading="lazy" decoding="async" src="images/Finger_Assembly_Good.jpg"
                          alt="Robotic finger assembly with bearings and spacers">
                 </div>
             </div>
@@ -424,16 +470,16 @@
 
                 <div class="project-gallery">
                     <div class="project-gallery">
-                        <img src="images/Cadenza_geometry_sketch.webp" alt="Cadenza geometry sketch">
-                        <img src="images/Cadenza_Trap_concept.png" alt="Cadenza trap concept">
-                        <img src="images/Cadenza_Render_1.webp" alt="Cadenza full robot render">
-                        <img src="images/Cadenza_arm_render.webp" alt="Cadenza intake arm render">
-                        <img src="images/Cadenza_Climber.webp" alt="Cadenza climber detail">
-                        <img src="images/Cadenza_progess_pic_a.webp" alt="Cadenza build in progress">
-                        <img src="images/Cadenza_Climber_Parts.webp" alt="Cadenza climber parts laid out">
-                        <img src="images/Cadenza_servicibility_carriage.webp" alt="Serviceable intake carriage">
-                        <img src="images/Cadenza_Carriage_V2.webp" alt="Cadenza intake carriage V2">
-                        <img src="images/IMG_8328.JPG" alt="Cadenza on the field">
+                        <img loading="lazy" decoding="async" src="images/Cadenza_geometry_sketch.webp" alt="Cadenza geometry sketch">
+                        <img loading="lazy" decoding="async" src="images/Cadenza_Trap_concept.png" alt="Cadenza trap concept">
+                        <img loading="lazy" decoding="async" src="images/Cadenza_Render_1.webp" alt="Cadenza full robot render">
+                        <img loading="lazy" decoding="async" src="images/Cadenza_arm_render.webp" alt="Cadenza intake arm render">
+                        <img loading="lazy" decoding="async" src="images/Cadenza_Climber.webp" alt="Cadenza climber detail">
+                        <img loading="lazy" decoding="async" src="images/Cadenza_progess_pic_a.webp" alt="Cadenza build in progress">
+                        <img loading="lazy" decoding="async" src="images/Cadenza_Climber_Parts.webp" alt="Cadenza climber parts laid out">
+                        <img loading="lazy" decoding="async" src="images/Cadenza_servicibility_carriage.webp" alt="Serviceable intake carriage">
+                        <img loading="lazy" decoding="async" src="images/Cadenza_Carriage_V2.webp" alt="Cadenza intake carriage V2">
+                        <img loading="lazy" decoding="async" src="images/IMG_8328.JPG" alt="Cadenza on the field">
                     </div>
 
                 </div>
@@ -518,13 +564,13 @@
                 </div>
 
                 <div class="project-gallery">
-                    <img src="images/Exoskeleton_Concept_Sketch.png"
+                    <img loading="lazy" decoding="async" src="images/Exoskeleton_Concept_Sketch.png"
                          alt="Concept sketch of the firefighting exoskeleton">
-                    <img src="images/Exoskeleton_Elastomer_Research_Image.png"
+                    <img loading="lazy" decoding="async" src="images/Exoskeleton_Elastomer_Research_Image.png"
                          alt="Dielectric elastomer research illustration">
-                    <img src="images/Exoskeleton_final_a.jpg"
+                    <img loading="lazy" decoding="async" src="images/Exoskeleton_final_a.jpg"
                          alt="Firefighting exoskeleton CAD rendering">
-                    <img src="images/Exoskeleton_final_b.jpg"
+                    <img loading="lazy" decoding="async" src="images/Exoskeleton_final_b.jpg"
                          alt="Alternate view of exoskeleton CAD model">
                 </div>
             </div>
@@ -623,17 +669,17 @@
                 </div>
 
                 <div class="project-gallery">
-                    <img src="images/Aegaeon_Cover_image.png"
+                    <img loading="lazy" decoding="async" src="images/Aegaeon_Cover_image.png"
                          alt="Aegaeon FRC 2023 robot cover image">
-                    <img src="images/FRC_2023_game_a.jpg"
+                    <img loading="lazy" decoding="async" src="images/FRC_2023_game_a.jpg"
                          alt="FRC Charged Up game field">
-                    <img src="images/Aegaeon_Sketch_Geometry_a_Final.png"
+                    <img loading="lazy" decoding="async" src="images/Aegaeon_Sketch_Geometry_a_Final.png"
                          alt="Parametric geometry sketch for Aegaeon arm">
-                    <img src="images/Aegaeon_Parametric_Calculator.png"
+                    <img loading="lazy" decoding="async" src="images/Aegaeon_Parametric_Calculator.png"
                          alt="Static torque calculator screenshot for pneumatic geometry">
-                    <img src="images/Aegaeon_Pre_Redesign_image_a.jpg"
+                    <img loading="lazy" decoding="async" src="images/Aegaeon_Pre_Redesign_image_a.jpg"
                          alt="Aegaeon early version with intake hopper">
-                    <img src="images/Aegeaon_Redesign_CAD_Render.jpg"
+                    <img loading="lazy" decoding="async" src="images/Aegeaon_Redesign_CAD_Render.jpg"
                          alt="Redesigned Aegaeon CAD render with direct-driven forearm">
                 </div>
             </div>
@@ -723,21 +769,21 @@
                 </div>
 
                 <div class="project-gallery">
-                    <img src="images/FTC_2023_Cover_image.jpg"
+                    <img loading="lazy" decoding="async" src="images/FTC_2023_Cover_image.jpg"
                          alt="Glacier FTC PowerPlay robot cover photo">
-                    <img src="images/FTC_2023_Game.png"
+                    <img loading="lazy" decoding="async" src="images/FTC_2023_Game.png"
                          alt="FTC PowerPlay field view">
-                    <img src="images/FTC_2023_CAD_1a.png"
+                    <img loading="lazy" decoding="async" src="images/FTC_2023_CAD_1a.png"
                          alt="Top view of Glacier CAD">
-                    <img src="images/FTC_2023_CAD_3a.png"
+                    <img loading="lazy" decoding="async" src="images/FTC_2023_CAD_3a.png"
                          alt="Isometric view of Glacier robot CAD">
-                    <img src="images/FTC_2023_Final_Carriage_assembly.jpg"
+                    <img loading="lazy" decoding="async" src="images/FTC_2023_Final_Carriage_assembly.jpg"
                          alt="Final Glacier carriage assembly with pulleys and slides">
-                    <img src="images/FTC_2023_FEA_generative_Design_graphic.png"
+                    <img loading="lazy" decoding="async" src="images/FTC_2023_FEA_generative_Design_graphic.png"
                          alt="FEA and generative design mesh for Glacier arm plate">
-                    <img src="images/FTC_2023_World_Ranking.png"
+                    <img loading="lazy" decoding="async" src="images/FTC_2023_World_Ranking.png"
                          alt="Global FTC offensive power ranking table showing 4th overall">
-                    <img src="images/slide23_img48.png"
+                    <img loading="lazy" decoding="async" src="images/slide23_img48.png"
                          alt="Glacier robot in the snow">
                 </div>
             </div>
@@ -779,9 +825,9 @@
                 </div>
 
                 <div class="project-gallery">
-                    <img src="images/Bike_Repair_station_Cover_image.png"
+                    <img loading="lazy" decoding="async" src="images/Bike_Repair_station_Cover_image.png"
                          alt="Concept render of community bike repair station">
-                    <img src="images/Bike_Repair_station_dimensions.png"
+                    <img loading="lazy" decoding="async" src="images/Bike_Repair_station_dimensions.png"
                          alt="Dimensioned drawing of bike repair station concept">
                 </div>
             </div>
