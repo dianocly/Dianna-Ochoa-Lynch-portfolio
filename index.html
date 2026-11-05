@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Dianna E. Ochoa Lynch’s mechanical engineering portfolio: Boston Dynamics Atlas actuation, MIT robotics research, and competition robot design.">
     <title>Dianna Lynch – Engineering Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=20261105-featured">
+    <link rel="stylesheet" href="styles.css?v=20261105-cards">
 </head>
-<body>
+<body class="homepage">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <div class="layout">
     <aside class="sidebar">
@@ -84,16 +84,6 @@
                     easy to build and maintain.
                 </p>
 
-                <div class="hero-meta">
-                    <div>
-                        <strong>Areas:</strong> Mechanical mechanism design, tendon routing,
-                        human-augmentation devices, FEA-informed optimization, robotics architecture
-                    </div>
-                    <div>
-                        <strong>Tools:</strong> Onshape, Autodesk Inventor, Fusion 360, SolidWorks, MATLAB,
-                        3D printing, laser cutting, manual and CNC mill/lathe
-                    </div>
-                </div>
             </div>
 
             <div class="hero-side">
@@ -101,10 +91,6 @@
                     <img fetchpriority="high" decoding="async" src="images/experience/dianna-boston-dynamics.webp"
                          alt="Dianna Lynch beside a humanoid robot at Boston Dynamics"
                          class="hero-photo">
-                </div>
-                <div class="hero-tag-card">
-                    B.S. candidate in Mechanical Engineering at MIT, Class of 2028, with a minor in Archaeology and Materials.
-                    Experience in Atlas actuation at Boston Dynamics, robotics research at MIT CSAIL, and FIRST robotics.
                 </div>
             </div>
         </section>
@@ -115,49 +101,39 @@
                 <span class="tagline">Industry, research, and individual robot design</span>
             </div>
             <div class="card-grid featured-work">
-                <article class="card">
-                    <img class="featured-photo spot-photo" src="images/experience/dianna-spot.webp" alt="Dianna beside Spot outdoors" loading="lazy" decoding="async">
-                    <div class="card-title">Boston Dynamics – Atlas Actuation</div>
-                    <div class="card-subtitle">Mechanical Engineering Intern · June–August 2026</div>
-                    <div class="card-body">
-                        <p>Redesigned injection-molded actuator components and worked with a supplier to reduce actuator plastic-part costs by 60%. Contributed to materials selection, failure analysis, and manufacturing tooling.</p>
-                        <a href="projects.html#boston-dynamics">Read about my work →</a>
-                    </div>
-                </article>
-                <article class="card">
-                    <a href="projects.html#finger" style="display:block; text-decoration:none; color:inherit;">
-                        <img class="featured-photo research-photo" loading="lazy" decoding="async" src="images/Finger_Assembly_Good.jpg" alt="Soft-Hand robotic finger prototype on test stand">
-
-                        <div class="card-header">
-                            <div class="card-title">Teleoperated Robotic Hand</div>
-                            <div class="card-badge">Research</div>
-                        </div>
-                        <div class="card-subtitle">
-                            Highly anthropomorphic robotic hand, intended to precisely mimic human motion through a
-                            high-DOF tendon-actuated design.
-                        </div>
-                        <div class="card-body">
-                            <ul>
-                                <li>
-                                    Designed and manufactured tendon-driven finger prototypes for anthropomorphic
-                                    teleoperation research at MIT CSAIL, September 2024–May 2026.
-                                </li>
-                            </ul>
-                            <div class="chip-row">
-                                <span class="chip">Rapid prototyping</span>
-                                <span class="chip">Research and development</span>
-                                <span class="chip">Humanoid robotics design</span>
-                            </div>
+                <article class="card project-card">
+                    <a class="project-card-link" href="projects.html#boston-dynamics">
+                        <img class="featured-photo spot-photo" src="images/experience/dianna-spot.webp" alt="Dianna beside Spot outdoors" loading="lazy" decoding="async">
+                        <div class="project-card-content">
+                            <div class="project-card-category">Industry</div>
+                            <h3 class="card-title">Boston Dynamics – Atlas Actuation</h3>
+                            <div class="card-subtitle">Mechanical Engineering Intern · June–August 2026</div>
+                            <p class="project-card-summary">Redesigned injection-molded actuator components and collaborated with a supplier to reduce actuator plastic-part costs by 60%. Contributed to materials selection, failure analysis, and manufacturing tooling.</p>
+                            <span class="project-card-cta">View project <span aria-hidden="true">→</span></span>
                         </div>
                     </a>
                 </article>
-                <article class="card">
-                    <a class="sebastian-card-link" href="projects.html#sebastian">
-                        <img class="featured-photo" src="images/sebastian/overview.webp" alt="Sebastian, Dianna’s MIT 2.007 tire-changing robot" width="1600" height="1200" loading="lazy" decoding="async">
-                        <div class="card-header"><div class="card-title">Sebastian – MIT 2.007</div><div class="card-badge">Fan Car Prize</div></div>
-                        <div class="card-subtitle">Spring 2026 · Individual design and manufacturing project</div>
-                        <div class="card-body"><p>A tire-changing robot combining a virtual four-bar gripper, over-center locks, and an adjustable nut spinner. Personally designed, fabricated, programmed, and driven.</p>
-                            <div class="chip-row"><span class="chip">Mechanism design</span><span class="chip">Modular construction</span><span class="chip">Prototyping and testing</span></div>
+                <article class="card project-card">
+                    <a class="project-card-link" href="projects.html#finger">
+                        <img class="featured-photo research-photo" src="images/Finger_Assembly_Good.jpg" alt="Tendon-driven robotic finger prototype on a test stand" loading="lazy" decoding="async">
+                        <div class="project-card-content">
+                            <div class="project-card-category">Research</div>
+                            <h3 class="card-title">Teleoperated Robotic Hand</h3>
+                            <div class="card-subtitle">MIT CSAIL · September 2024–May 2026</div>
+                            <p class="project-card-summary">Designed and manufactured four generations of tendon-driven finger prototypes for anthropomorphic teleoperation, iterating on kinematics, tendon routing, and serviceability.</p>
+                            <span class="project-card-cta">View project <span aria-hidden="true">→</span></span>
+                        </div>
+                    </a>
+                </article>
+                <article class="card project-card">
+                    <a class="project-card-link" href="projects.html#sebastian">
+                        <img class="featured-photo " src="images/sebastian/overview.webp" alt="Sebastian, Dianna’s MIT 2.007 tire-changing robot" loading="lazy" decoding="async">
+                        <div class="project-card-content">
+                            <div class="project-card-category">Individual project</div>
+                            <h3 class="card-title">Sebastian – MIT 2.007</h3>
+                            <div class="card-subtitle">Design &amp; Manufacturing I · Spring 2026</div>
+                            <p class="project-card-summary">Personally designed, fabricated, programmed, and drove a tire-changing robot. Placed first on Day 1 of competition and received the Fan Car Prize for excellent robot execution.</p>
+                            <span class="project-card-cta">View project <span aria-hidden="true">→</span></span>
                         </div>
                     </a>
                 </article>
@@ -170,59 +146,27 @@
                 <span class="tagline">Competition robotics</span>
             </div>
             <div class="card-grid">
-                <article class="card">
-                    <a href="projects.html#cadenza" style="display:block; text-decoration:none; color:inherit;">
-                        <img loading="lazy" decoding="async" src="images/IMG_8328.JPG"
-                             alt="Cadenza FRC 2024 Crescendo robot on the field"
-                             style="width:100%; border-radius:10px; border:1px solid #e5e7eb; margin-bottom:8px;">
-
-                        <div class="card-header">
-                            <div class="card-title">Cadenza – FRC 2024 Crescendo</div>
-                            <div class="card-badge">Competition · Industrial Design Award</div>
-                        </div>
-                        <div class="card-subtitle">
-                            Robot recognized with the Industrial Design Award at the FRC World Championship – high-reliability
-                            note cycling and robust intake architecture.
-                        </div>
-                        <div class="card-body">
-                            <ul>
-                                <li>Lead designer and systems engineer for intake, arm, and note path – focused on reliability under high-contact play.</li>
-                                <li>Owned the V2 intake redesign and pre-Worlds arm rebuild that improved acquisition width, grip, and maintainability.</li>
-                            </ul>
-                            <div class="chip-row">
-                                <span class="chip">Systems engineering</span>
-                                <span class="chip">Intake architecture</span>
-                                <span class="chip">Industrial Design Award</span>
-                            </div>
+                <article class="card project-card">
+                    <a class="project-card-link" href="projects.html#cadenza">
+                        <img class="featured-photo " src="images/IMG_8328.JPG" alt="Cadenza FRC robot on the competition field" loading="lazy" decoding="async">
+                        <div class="project-card-content">
+                            <div class="project-card-category">Competition</div>
+                            <h3 class="card-title">Cadenza – FRC 2024</h3>
+                            <div class="card-subtitle">Lead designer &amp; systems engineer · 2024</div>
+                            <p class="project-card-summary">Led intake, arm, and note-path design, including an intake redesign and pre-Worlds arm rebuild. Robot recognized with the Industrial Design Award at the FRC World Championship.</p>
+                            <span class="project-card-cta">View project <span aria-hidden="true">→</span></span>
                         </div>
                     </a>
                 </article>
-                <article class="card">
-                    <a href="projects.html#glacier" style="display:block; text-decoration:none; color:inherit;">
-                        <img loading="lazy" decoding="async" src="images/FTC_2023_Cover_image.jpg"
-                             alt="Glacier FTC PowerPlay robot on the field"
-                             style="width:100%; border-radius:10px; border:1px solid #e5e7eb; margin-bottom:8px;">
-
-                        <div class="card-header">
-                            <div class="card-title">Glacier – FTC 2023 PowerPlay</div>
-                            <div class="card-badge">Competition</div>
-                        </div>
-                        <div class="card-subtitle">
-                            FTC robot ranked 4th overall globally, with a coaxial virtual four-bar on a compact mecanum drive.
-                        </div>
-                        <div class="card-body">
-                            <ul>
-                                <li>Architected the robot system, including slides, arm, and end-effector, for dense-field cone stacking.</li>
-                                <li>
-                                    Iterated carriage, drive, and arm architecture using finite element analysis and generative design
-                                    to reach a top-tier global offensive rating.
-                                </li>
-                            </ul>
-                            <div class="chip-row">
-                                <span class="chip">System architecture and integration</span>
-                                <span class="chip">FEA-informed design</span>
-                                <span class="chip">Iterative design</span>
-                            </div>
+                <article class="card project-card">
+                    <a class="project-card-link" href="projects.html#glacier">
+                        <img class="featured-photo " src="images/FTC_2023_Cover_image.jpg" alt="Glacier FTC robot on the competition field" loading="lazy" decoding="async">
+                        <div class="project-card-content">
+                            <div class="project-card-category">Competition</div>
+                            <h3 class="card-title">Glacier – FTC PowerPlay</h3>
+                            <div class="card-subtitle">Robot architecture &amp; integration · 2023</div>
+                            <p class="project-card-summary">Architected the slides, arm, and end-effector for dense-field cone stacking. Iterated using finite element analysis and generative design; the robot ranked fourth overall globally.</p>
+                            <span class="project-card-cta">View project <span aria-hidden="true">→</span></span>
                         </div>
                     </a>
                 </article>
